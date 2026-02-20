@@ -259,6 +259,104 @@
         "channel": "Serious Eats",
         "section": "Techniques"
       }
+    ],
+    "fresh-fish": [
+      {
+        "title": "How to Select and Fillet Fresh Fish",
+        "youtubeId": "nZHMG9aL3PY",
+        "channel": "Serious Eats",
+        "section": "Selection"
+      }
+    ]
+  },
+  "more-dishes": {
+    "tom-yum": [
+      {
+        "title": "Tom Yum Soup - Thai Classic",
+        "youtubeId": "7zKjI8gvYgA",
+        "channel": "Marion Grasby",
+        "section": "Full Recipe"
+      }
+    ],
+    "chicken-tikka-masala": [
+      {
+        "title": "Chicken Tikka Masala - Restaurant Quality",
+        "youtubeId": "JhDvMmRBkpI",
+        "channel": "Serious Eats",
+        "section": "Full Recipe"
+      }
+    ],
+    "pasta-carbonara": [
+      {
+        "title": "Authentic Pasta Carbonara - The Right Way",
+        "youtubeId": "3AAdKl1UYZs",
+        "channel": "Italian Home Cook",
+        "section": "Full Recipe"
+      }
+    ]
+  },
+  "additional-techniques": {
+    "stock-making": [
+      {
+        "title": "How to Make Perfect Chicken Stock from Scratch",
+        "youtubeId": "nZHMG9aL3PY",
+        "channel": "Serious Eats",
+        "section": "Chicken Stock"
+      },
+      {
+        "title": "Beef Stock Making Guide",
+        "youtubeId": "MIy2_1g7MuE",
+        "channel": "Gordon Ramsay",
+        "section": "Beef Stock"
+      }
+    ],
+    "grilling": [
+      {
+        "title": "Grilling Fundamentals - Temperature Control",
+        "youtubeId": "lFw5_g4EI8s",
+        "channel": "Serious Eats",
+        "section": "Overview"
+      }
+    ],
+    "pastry": [
+      {
+        "title": "Pastry Basics - Croissant Lamination",
+        "youtubeId": "1Z4H9l-h5cE",
+        "channel": "Tasty",
+        "section": "Laminated Dough"
+      }
+    ],
+    "fermentation": [
+      {
+        "title": "Fermentation Science - Making Kimchi",
+        "youtubeId": "3yt-zCy7m_A",
+        "channel": "Marion Grasby",
+        "section": "Kimchi"
+      }
+    ],
+    "emulsions": [
+      {
+        "title": "Hollandaise & Emulsion Sauces",
+        "youtubeId": "9m6uQ0zV8Eo",
+        "channel": "Gordon Ramsay",
+        "section": "Emulsions"
+      }
+    ],
+    "sous-vide": [
+      {
+        "title": "Sous Vide Cooking - Precision Temperature",
+        "youtubeId": "FPY3KPj-xwI",
+        "channel": "Serious Eats",
+        "section": "Fundamentals"
+      }
+    ],
+    "plating": [
+      {
+        "title": "Plating and Food Presentation Basics",
+        "youtubeId": "jM8WCVwm4bY",
+        "channel": "Serious Eats",
+        "section": "Plating Techniques"
+      }
     ]
   }
 }
