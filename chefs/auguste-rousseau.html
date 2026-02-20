@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary SEO Meta -->
+  <title>Auguste Rousseau | Classical French Cuisine & Pastry — Learn To Chef</title>
+  <meta name="description" content="Learn classical French cooking from Auguste Rousseau. 30 years commanding kitchens from Lyon to New York. Master mother sauces, French techniques, and modern sensibility through staged learning paths.">
+  <meta name="keywords" content="Auguste Rousseau, French cooking, French cuisine, mother sauces, French techniques, pastry, classical French cooking, sauce mastery">
+  <meta name="author" content="Learn To Chef">
+  <link rel="canonical" href="https://learntochef.com/chefs/auguste-rousseau/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://learntochef.com/chefs/auguste-rousseau/">
+  <meta property="og:title" content="Auguste Rousseau | Classical French Cuisine & Pastry">
+  <meta property="og:description" content="Master classical French cooking from Auguste Rousseau. 30 years of Michelin-level expertise in a structured learning path.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200&h=630&fit=crop&q=80">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .chef-profile__breadcrumb {
+      padding: var(--space-md) 0;
+      font-size: var(--text-sm);
+      color: var(--color-text-light);
+    }
+    .chef-profile__breadcrumb a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .chef-profile__breadcrumb a:hover {
+      color: var(--color-accent-dark);
+    }
+    .chef-profile__header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
+      align-items: center;
+      margin-bottom: var(--space-xl);
+    }
+    .chef-profile__image {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    .chef-profile__info h1 {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      margin-bottom: var(--space-sm);
+      line-height: 1.2;
+    }
+    .chef-profile__specialty {
+      font-size: 1.25rem;
+      color: var(--color-accent);
+      font-weight: 600;
+      margin-bottom: var(--space-lg);
+    }
+    .chef-profile__bio {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--color-text-light);
+      margin-bottom: var(--space-lg);
+    }
+    .chef-profile__stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+      margin-bottom: var(--space-lg);
+    }
+    .chef-profile__stat {
+      text-align: center;
+      padding: var(--space-md);
+      background: var(--color-bg-light);
+      border-radius: 8px;
+    }
+    .chef-profile__stat-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+    .chef-profile__stat-label {
+      font-size: var(--text-sm);
+      color: var(--color-text-light);
+      margin-top: var(--space-xs);
+    }
+    .section-divider {
+      margin: var(--space-xl) 0;
+      border: none;
+      border-top: 1px solid var(--color-border);
+    }
+    .chef-profile__section-title {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      margin-bottom: var(--space-lg);
+      color: var(--color-text);
+    }
+    .cuisine-map {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-md);
+      margin-bottom: var(--space-xl);
+    }
+    .cuisine-badge {
+      padding: var(--space-md);
+      background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+      color: white;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 600;
+    }
+    .technique-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-lg);
+      margin-bottom: var(--space-xl);
+    }
+    .technique-item {
+      padding: var(--space-lg);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      background: var(--color-bg-light);
+    }
+    .technique-item h4 {
+      margin-bottom: var(--space-sm);
+      color: var(--color-accent);
+    }
+    .technique-item p {
+      color: var(--color-text-light);
+      line-height: 1.6;
+    }
+    .dish-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-md);
+      margin-bottom: var(--space-xl);
+    }
+    .dish-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .dish-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .dish-card__image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .dish-card__content {
+      padding: var(--space-md);
+    }
+    .dish-card__title {
+      font-weight: 600;
+      margin-bottom: var(--space-xs);
+    }
+    .dish-card__description {
+      font-size: var(--text-sm);
+      color: var(--color-text-light);
+      line-height: 1.5;
+    }
+    .learning-stages {
+      display: grid;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-xl);
+    }
+    .stage-box {
+      padding: var(--space-lg);
+      border-left: 4px solid var(--color-accent);
+      background: var(--color-bg-light);
+      border-radius: 4px;
+    }
+    .stage-box h3 {
+      color: var(--color-accent);
+      margin-bottom: var(--space-md);
+    }
+    .stage-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .stage-box li {
+      padding: var(--space-xs) 0;
+      color: var(--color-text-light);
+    }
+    .stage-box li:before {
+      content: "✓ ";
+      color: var(--color-accent);
+      font-weight: 600;
+      margin-right: var(--space-xs);
+    }
+    .video-section {
+      background: var(--color-bg-light);
+      padding: var(--space-lg);
+      border-radius: 8px;
+      margin-bottom: var(--space-xl);
+    }
+    .video-frame {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+    .video-frame iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    @media (max-width: 768px) {
+      .chef-profile__header {
+        grid-template-columns: 1fr;
+      }
+      .chef-profile__image {
+        height: 300px;
+      }
+      .chef-profile__info h1 {
+        font-size: 2rem;
+      }
+      .chef-profile__stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="/" class="header__logo" aria-label="Learn To Chef - Home">
+        <span class="header__logo-icon">👨‍🍳</span>
+        <span class="header__logo-text">Learn<span>ToChef</span></span>
+      </a>
+
+      <nav class="header__nav" role="navigation" aria-label="Main Navigation">
+        <a href="/#journey" class="header__nav-link">Your Journey</a>
+        <a href="/chefs/" class="header__nav-link">Master Chefs</a>
+        <a href="/#techniques" class="header__nav-link">Techniques</a>
+        <a href="/#cuisines" class="header__nav-link">Cuisines</a>
+        <a href="/#stories" class="header__nav-link">Stories</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang-switcher" role="navigation" aria-label="Language Selector">
+          <a href="/chefs/auguste-rousseau/" class="lang-switcher__link active" aria-label="English" title="English">EN</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top: var(--space-lg); padding-bottom: var(--space-lg);">
+      <!-- Breadcrumb -->
+      <nav class="chef-profile__breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> / <a href="/chefs/">Master Chefs</a> / <span>Auguste Rousseau</span>
+      </nav>
+    </div>
+
+    <!-- ========== CHEF HERO SECTION ========== -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="chef-profile__header fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&h=500&fit=crop&q=80"
+            alt="Auguste Rousseau, classical French chef in white chef's coat"
+            class="chef-profile__image"
+            width="600" height="500"
+          >
+          <div class="chef-profile__info">
+            <h1>Auguste Rousseau</h1>
+            <p class="chef-profile__specialty">Classical French Cuisine & Pastry</p>
+            <p class="chef-profile__bio">
+              With 30 years commanding kitchens from Lyon to New York, Chef Rousseau brings the precision of classical French technique with a modern sensibility. His mother sauces module alone has transformed thousands of home cooks into sauce artisans. "Cooking is chemistry performed with love," he says. His lessons on building flavor through proper fond development and deglazing are legendary.
+            </p>
+            <div class="chef-profile__stats">
+              <div class="chef-profile__stat">
+                <div class="chef-profile__stat-value">87</div>
+                <div class="chef-profile__stat-label">Recipes</div>
+              </div>
+              <div class="chef-profile__stat">
+                <div class="chef-profile__stat-value">24</div>
+                <div class="chef-profile__stat-label">Techniques</div>
+              </div>
+              <div class="chef-profile__stat">
+                <div class="chef-profile__stat-value">3</div>
+                <div class="chef-profile__stat-label">Michelin Stars</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ========== THE STORY ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="chef-profile__section-title">The Story</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+          <p style="margin-bottom: var(--space-md); font-size: 1.1rem; line-height: 1.8;">
+            Auguste Rousseau began his culinary apprenticeship at age 14 in a small bistro in Lyon, France. Under the mentorship of Chef Jacques Pépin's protégé, he learned that French cooking is not about complexity — it's about precision, respect for ingredients, and understanding the chemistry behind every step.
+          </p>
+          <p style="margin-bottom: var(--space-md); font-size: 1.1rem; line-height: 1.8;">
+            After 8 years as a commis and saucier, Rousseau moved to Paris where he spent 12 years at a Michelin three-star restaurant. There, he mastered the mother sauces, learned to execute 50 classical preparations perfectly, and developed his philosophy: "A sauce should enhance the ingredient, never overpower it."
+          </p>
+          <p style="margin-bottom: var(--space-md); font-size: 1.1rem; line-height: 1.8;">
+            In 1995, he opened his own restaurant in New York, earning two Michelin stars. His signature approach blends classical French technique with seasonal American ingredients. He has trained over 200 chefs, authored 3 cookbooks, and now dedicates his time to teaching the next generation of culinary professionals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ========== CUISINE MAP ========== -->
+    <section class="section section--cream">
+      <div class="container">
+        <h2 class="chef-profile__section-title">Cuisine Mastery</h2>
+        <p style="text-align: center; margin-bottom: var(--space-lg); color: var(--color-text-light);">
+          The cuisines and regional influences that define Auguste's cooking philosophy
+        </p>
+        <div class="cuisine-map">
+          <div class="cuisine-badge">🇫🇷 French Classical</div>
+          <div class="cuisine-badge">🇮🇹 Northern Italian</div>
+          <div class="cuisine-badge">🇪🇸 Spanish</div>
+          <div class="cuisine-badge">🍄 Seasonal Produce</div>
+          <div class="cuisine-badge">🧈 Butter & Cream</div>
+          <div class="cuisine-badge">🍷 Wine Reduction</div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ========== TECHNIQUE SIGNATURE ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="chef-profile__section-title">His Technique Signature</h2>
+        <p style="text-align: center; margin-bottom: var(--space-lg); color: var(--color-text-light);">
+          The hallmarks of Auguste's cooking approach
+        </p>
+        <div class="technique-grid">
+          <div class="technique-item">
+            <h4>Knife Style</h4>
+            <p>Precise, controlled cuts using classical French grips (claw hand, pinch grip). Every cut is deliberate and uniform. No shortcuts, no exceptions.</p>
+          </div>
+          <div class="technique-item">
+            <h4>Sauce Approach</h4>
+            <p>Master of the five mother sauces. Builds derivative sauces through proper fond development, deglaze technique, and careful emulsification. Taste as you go.</p>
+          </div>
+          <div class="technique-item">
+            <h4>Plating Approach</h4>
+            <p>Elegant simplicity. The plate is a canvas, but the ingredient is the star. Minimal garnish, maximum impact. Every element has a purpose.</p>
+          </div>
+          <div class="technique-item">
+            <h4>Heat Control</h4>
+            <p>Deep understanding of high-heat searing for proteins, gentle poaching for delicate items, and controlled low-heat braising for flavor development.</p>
+          </div>
+          <div class="technique-item">
+            <h4>Seasoning Philosophy</h4>
+            <p>Season in layers, taste constantly. Salt is used to enhance, never to dominate. Acid balance is critical. Freshly ground black pepper, always.</p>
+          </div>
+          <div class="technique-item">
+            <h4>Pastry Mastery</h4>
+            <p>Classical French pastry techniques: laminated doughs, precise temperature control, and the understanding that pastry is the marriage of precision and intuition.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ========== HALL OF FAME DISHES ========== -->
+    <section class="section section--cream">
+      <div class="container">
+        <h2 class="chef-profile__section-title">Iconic Dishes</h2>
+        <p style="text-align: center; margin-bottom: var(--space-lg); color: var(--color-text-light);">
+          Signature creations that define Auguste's culinary philosophy
+        </p>
+        <div class="dish-gallery">
+          <div class="dish-card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop&q=80" alt="Coq au vin" class="dish-card__image">
+            <div class="dish-card__content">
+              <h3 class="dish-card__title">Coq au Vin</h3>
+              <p class="dish-card__description">Chicken braised in Burgundy wine with pearl onions, mushrooms, and lardons. A masterclass in low-temperature braising and sauce development.</p>
+            </div>
+          </div>
+          <div class="dish-card">
+            <img src="https://images.unsplash.com/photo-1467521ceef277-d4a32d995b12?w=400&h=300&fit=crop&q=80" alt="Sole Meunière" class="dish-card__image">
+            <div class="dish-card__content">
+              <h3 class="dish-card__title">Sole Meunière</h3>
+              <p class="dish-card__description">Perfectly seared Dover sole with brown butter and fresh lemon. Simplicity elevated to an art form through precise technique.</p>
+            </div>
+          </div>
+          <div class="dish-card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop&q=80" alt="Beef Bourguignon" class="dish-card__image">
+            <div class="dish-card__content">
+              <h3 class="dish-card__title">Beef Bourguignon</h3>
+              <p class="dish-card__description">Tender beef chuck braised with red wine, pearl onions, and mushrooms. Rich, complex, and deeply satisfying.</p>
+            </div>
+          </div>
+          <div class="dish-card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop&q=80" alt="Crème Brûlée" class="dish-card__image">
+            <div class="dish-card__content">
+              <h3 class="dish-card__title">Crème Brûlée</h3>
+              <p class="dish-card__description">Silky custard with a caramelized sugar crust. Teaches the balance between temperature precision and textural contrast.</p>
+            </div>
+          </div>
+          <div class="dish-card">
+            <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400&h=300&fit=crop&q=80" alt="Bouillabaisse" class="dish-card__image">
+            <div class="dish-card__content">
+              <h3 class="dish-card__title">Bouillabaisse</h3>
+              <p class="dish-card__description">Provençal fish stew with saffron, fennel, and orange. A lesson in building complex seafood broths.</p>
+            </div>
+          </div>
+          <div class="dish-card">
+            <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=400&h=300&fit=crop&q=80" alt="Ratatouille" class="dish-card__image">
+            <div class="dish-card__content">
+              <h3 class="dish-card__title">Ratatouille</h3>
+              <p class="dish-card__description">Layered Provençal vegetable gratin. Shows how proper knife skills and timing transform humble vegetables.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ========== LEARNING STAGES ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="chef-profile__section-title">Cook Like Auguste — The Learning Path</h2>
+        <p style="text-align: center; margin-bottom: var(--space-lg); color: var(--color-text-light);">
+          A five-stage journey through classical French cooking
+        </p>
+
+        <div class="learning-stages">
+          <div class="stage-box">
+            <h3>Stage 1: The Fundamentals (Weeks 1-4)</h3>
+            <p style="margin-bottom: var(--space-md); color: var(--color-text);">Learn the non-negotiable basics that unlock all French cooking.</p>
+            <ul>
+              <li>Knife skills: brunoise, julienne, mirepoix, chiffonade</li>
+              <li>How to hold a pan and control heat like a professional</li>
+              <li>The mirepoix base (onion, carrot, celery) — the foundation of French flavor</li>
+              <li>Making stock from bones, aromatics, and water</li>
+              <li>Understanding seasoning: salt, pepper, acid</li>
+              <li>Your first pan sauce using fond and deglazing</li>
+            </ul>
+          </div>
+
+          <div class="stage-box">
+            <h3>Stage 2: The Five Mother Sauces (Weeks 5-8)</h3>
+            <p style="margin-bottom: var(--space-md); color: var(--color-text);">The gateway to mastery — these five sauces unlock 200+ derivatives.</p>
+            <ul>
+              <li>Béchamel: butter, flour roux, milk</li>
+              <li>Velouté: stock (chicken, fish, veal), blonde roux</li>
+              <li>Espagnole: brown stock, brown roux, tomato</li>
+              <li>Hollandaise: egg yolk, butter, lemon juice emulsion</li>
+              <li>Tomato sauce: tomatoes, aromatics, herbs</li>
+              <li>Building derivative sauces: Mornay, Périgueux, Poivrade</li>
+            </ul>
+          </div>
+
+          <div class="stage-box">
+            <h3>Stage 3: Signature Proteins (Weeks 9-12)</h3>
+            <p style="margin-bottom: var(--space-md); color: var(--color-text);">Master the iconic French preparations for fish, chicken, and beef.</p>
+            <ul>
+              <li>Sole Meunière: searing the perfect fillet</li>
+              <li>Coq au Vin: braising chicken in wine</li>
+              <li>Beef Bourguignon: low-temperature braising</li>
+              <li>Pan-seared duck breast with sauce</li>
+              <li>Lamb chops with herbs de Provence</li>
+              <li>Understanding carryover cooking and resting</li>
+            </ul>
+          </div>
+
+          <div class="stage-box">
+            <h3>Stage 4: Plating & Restaurant Technique (Weeks 13-16)</h3>
+            <p style="margin-bottom: var(--space-md); color: var(--color-text);">Elevate your presentation and timing to restaurant standards.</p>
+            <ul>
+              <li>Plate composition: balance, negative space, height</li>
+              <li>Sauce placement and garnish technique</li>
+              <li>Understanding mise en place (everything in its place)</li>
+              <li>Multi-course meal timing and service</li>
+              <li>Temperature management: keeping food warm without overcooking</li>
+              <li>The art of professional plating tools (squeeze bottles, tweezers)</li>
+            </ul>
+          </div>
+
+          <div class="stage-box">
+            <h3>Stage 5: Pastry & Advanced Techniques (Weeks 17-20)</h3>
+            <p style="margin-bottom: var(--space-md); color: var(--color-text);">Complete the mastery with French pastry and advanced techniques.</p>
+            <ul>
+              <li>Crème Brûlée: custard science and caramelization</li>
+              <li>Croissants: laminated dough mastery</li>
+              <li>Éclairs: choux pastry perfection</li>
+              <li>Tarte Tatin: caramelization and precision</li>
+              <li>Consommé clarification: advanced soup techniques</li>
+              <li>Sous vide fundamentals: temperature precision</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ========== FEATURED VIDEO ========== -->
+    <section class="section section--dark">
+      <div class="container">
+        <h2 class="chef-profile__section-title" style="color: white;">Watch Auguste Teach</h2>
+        <p style="text-align: center; margin-bottom: var(--space-lg); color: rgba(255,255,255,0.8);">
+          Featured technique video: How to make a perfect sauce from pan drippings
+        </p>
+        <div class="video-section" style="background: rgba(0,0,0,0.3);">
+          <div class="video-frame">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="How to Make Perfect Pan Sauce" allowfullscreen></iframe>
+          </div>
+          <p style="margin-top: var(--space-md); color: rgba(255,255,255,0.8); font-size: var(--text-sm);">
+            Learn the secrets of building a pan sauce using fond, stock, and butter — the foundation of French cooking technique.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ========== RELATED CHEFS ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="chef-profile__section-title">Learn From Other Masters</h2>
+        <p style="text-align: center; margin-bottom: var(--space-lg); color: var(--color-text-light);">
+          Explore related culinary traditions and techniques
+        </p>
+        <div class="journey__grid" style="margin-top: var(--space-lg);">
+          <div class="journey__card">
+            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=600&h=500&fit=crop&q=80" alt="Mei Lin Tanaka" class="journey__card-image">
+            <div class="journey__card-overlay"></div>
+            <div class="journey__card-content">
+              <h3 class="journey__card-title">Mei Lin Tanaka</h3>
+              <p class="journey__card-text">Pan-Asian Umami Master</p>
+              <a href="/chefs/mei-lin-tanaka/" class="journey__card-link">Explore Chef &#8594;</a>
+            </div>
+          </div>
+          <div class="journey__card">
+            <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=600&h=500&fit=crop&q=80" alt="Carlos Mendoza" class="journey__card-image">
+            <div class="journey__card-overlay"></div>
+            <div class="journey__card-content">
+              <h3 class="journey__card-title">Carlos Mendoza Rivera</h3>
+              <p class="journey__card-text">Latin Fire & Tradition</p>
+              <a href="/chefs/carlos-mendoza-rivera/" class="journey__card-link">Explore Chef &#8594;</a>
+            </div>
+          </div>
+          <div class="journey__card">
+            <img src="https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=600&h=500&fit=crop&q=80" alt="Browse all chefs" class="journey__card-image">
+            <div class="journey__card-overlay"></div>
+            <div class="journey__card-content">
+              <h3 class="journey__card-title">Browse All Chefs</h3>
+              <p class="journey__card-text">Explore 36+ culinary masters</p>
+              <a href="/chefs/" class="journey__card-link">View Directory &#8594;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== NEWSLETTER CTA ========== -->
+    <section class="section section--primary newsletter">
+      <div class="container container--narrow">
+        <div class="fade-in">
+          <span class="section__subtitle" style="color: rgba(255,255,255,0.8);">Master French Cooking</span>
+          <h2 class="section__title">Join Auguste's Learning Path</h2>
+          <hr class="section__divider" style="background: rgba(255,255,255,0.4);">
+          <p class="section__description" style="color: rgba(255,255,255,0.85);">
+            Get weekly French cooking lessons, techniques, and recipes directly inspired by Auguste Rousseau's classical approach. Learn the fundamentals that will make you confident in any kitchen.
+          </p>
+
+          <form class="newsletter__form">
+            <label for="newsletter-email" class="sr-only">Your email address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              class="newsletter__input"
+              placeholder="your@email.com"
+              required
+            >
+            <button type="submit" class="btn btn--accent btn--lg">Start Learning</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">👨‍🍳 Learn<span>ToChef</span></div>
+          <p class="footer__brand-text">
+            Your free, comprehensive culinary academy. Learn to cook from the world's greatest chefs through structured learning paths and technique mastery.
+          </p>
+        </div>
+
+        <nav aria-label="Explore">
+          <h3 class="footer__column-title">Explore</h3>
+          <div class="footer__links">
+            <a href="/#journey" class="footer__link">&#8594; Culinary Journeys</a>
+            <a href="/chefs/" class="footer__link">&#8594; Master Chefs</a>
+            <a href="/#techniques" class="footer__link">&#8594; Technique Academy</a>
+            <a href="/#cuisines" class="footer__link">&#8594; World Cuisines</a>
+          </div>
+        </nav>
+
+        <nav aria-label="Resources">
+          <h3 class="footer__column-title">Resources</h3>
+          <div class="footer__links">
+            <a href="#" class="footer__link">&#8594; Ingredient Dictionary</a>
+            <a href="#" class="footer__link">&#8594; Equipment Guide</a>
+            <a href="#" class="footer__link">&#8594; Measurement Converter</a>
+            <a href="#" class="footer__link">&#8594; Cooking Glossary</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Learn To Chef. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Terms of Service</a>
+          <a href="#" class="footer__bottom-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>

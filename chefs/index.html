@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Master Chef Directory | Learn to Cook from the World's Greatest Chefs — Learn To Chef</title>
+  <meta name="description" content="Explore 36+ culinary masters from around the world. Learn French, Asian, Latin American, Mediterranean, and more cuisines from legendary chefs. Browse by cuisine, region, or difficulty level.">
+  <meta name="keywords" content="master chefs, culinary masters, cooking from chefs, world cuisine, chef directory, learn cooking, culinary education">
+  <meta name="author" content="Learn To Chef">
+  <link rel="canonical" href="https://learntochef.com/chefs/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .chefs-hero { background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%); color: white; padding: var(--space-xl) 0; text-align: center; }
+    .chefs-hero h1 { font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: var(--space-md); }
+    .chefs-hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.95; }
+    .chef-filters { display: flex; flex-wrap: wrap; gap: var(--space-md); margin-bottom: var(--space-lg); justify-content: center; }
+    .chef-filter-btn { padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); background: white; border-radius: 20px; cursor: pointer; font-size: var(--text-sm); font-weight: 600; transition: all 0.3s; }
+    .chef-filter-btn:hover, .chef-filter-btn.active { background: var(--color-accent); color: white; border-color: var(--color-accent); }
+    .chef-cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-lg); margin-top: var(--space-lg); }
+    .chef-card-compact { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+    .chef-card-compact:hover { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    .chef-card-compact__image { width: 100%; height: 250px; object-fit: cover; }
+    .chef-card-compact__body { padding: var(--space-lg); }
+    .chef-card-compact__name { font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: var(--space-xs); }
+    .chef-card-compact__specialty { font-size: var(--text-sm); color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-sm); }
+    .chef-card-compact__bio { font-size: 0.95rem; line-height: 1.6; color: var(--color-text-light); margin-bottom: var(--space-md); }
+    .chef-card-compact__link { display: inline-block; color: var(--color-accent); font-weight: 600; text-decoration: none; }
+    .chef-card-compact__link:hover { text-decoration: underline; }
+    .chef-card-compact__meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-sm); font-size: 0.85rem; color: var(--color-text-light); }
+    .featured-chefs { margin-bottom: var(--space-xl); background: var(--color-bg-light); padding: var(--space-lg); border-radius: 8px; }
+    .featured-chefs h2 { margin-bottom: var(--space-md); }
+    .featured-banner { text-align: center; margin-bottom: var(--space-lg); color: var(--color-text-light); font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="/" class="header__logo" aria-label="Learn To Chef - Home">
+        <span class="header__logo-icon">👨‍🍳</span>
+        <span class="header__logo-text">Learn<span>ToChef</span></span>
+      </a>
+      <nav class="header__nav" role="navigation" aria-label="Main Navigation">
+        <a href="/#journey" class="header__nav-link">Your Journey</a>
+        <a href="/chefs/" class="header__nav-link">Master Chefs</a>
+        <a href="/#techniques" class="header__nav-link">Techniques</a>
+        <a href="/#cuisines" class="header__nav-link">Cuisines</a>
+      </nav>
+      <div class="header__actions">
+        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <div class="chefs-hero">
+      <div class="container">
+        <h1>Master Chef Directory</h1>
+        <p>Learn to cook from 36+ culinary masters around the world. Each chef brings unique techniques, traditions, and philosophies to transform your cooking.</p>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <section class="section">
+      <div class="container">
+        <!-- Featured Chefs -->
+        <div class="featured-chefs">
+          <h2 style="text-align: center;">🌟 Featured Culinary Masters</h2>
+          <p class="featured-banner">Start your learning journey with our three most comprehensive curriculum guides</p>
+          <div class="chef-cards-grid" style="margin-top: var(--space-lg);">
+            <!-- Featured 1: Auguste Rousseau -->
+            <div class="chef-card-compact">
+              <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&h=300&fit=crop&q=80" alt="Auguste Rousseau" class="chef-card-compact__image">
+              <div class="chef-card-compact__body">
+                <h3 class="chef-card-compact__name">Auguste Rousseau</h3>
+                <p class="chef-card-compact__specialty">French Classical Cuisine</p>
+                <p class="chef-card-compact__bio">30 years commanding kitchens from Lyon to New York. Master of mother sauces and classical French technique.</p>
+                <a href="/chefs/auguste-rousseau/" class="chef-card-compact__link">Full Curriculum →</a>
+                <div class="chef-card-compact__meta">
+                  <div>87 Recipes</div>
+                  <div>⭐⭐⭐ 3 Stars</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured 2: Mei Lin Tanaka -->
+            <div class="chef-card-compact">
+              <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=400&h=300&fit=crop&q=80" alt="Mei Lin Tanaka" class="chef-card-compact__image">
+              <div class="chef-card-compact__body">
+                <h3 class="chef-card-compact__name">Mei Lin Tanaka</h3>
+                <p class="chef-card-compact__specialty">Pan-Asian & Umami</p>
+                <p class="chef-card-compact__bio">Foremost authority on umami science. Born in Taipei, trained in Tokyo. Wok mastery expertise.</p>
+                <a href="/chefs/mei-lin-tanaka/" class="chef-card-compact__link">Full Curriculum →</a>
+                <div class="chef-card-compact__meta">
+                  <div>112 Recipes</div>
+                  <div>⭐⭐ 2 Stars</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured 3: Carlos Mendoza Rivera -->
+            <div class="chef-card-compact">
+              <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=400&h=300&fit=crop&q=80" alt="Carlos Mendoza Rivera" class="chef-card-compact__image">
+              <div class="chef-card-compact__body">
+                <h3 class="chef-card-compact__name">Carlos Mendoza Rivera</h3>
+                <p class="chef-card-compact__specialty">Latin American Fire</p>
+                <p class="chef-card-compact__bio">Two decades preserving Latin American heritage. Expert in open-fire cooking and mole traditions.</p>
+                <a href="/chefs/carlos-mendoza-rivera/" class="chef-card-compact__link">Full Curriculum →</a>
+                <div class="chef-card-compact__meta">
+                  <div>95 Recipes</div>
+                  <div>⭐ 1 Star</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="section-divider" style="margin: var(--space-xl) 0;">
+
+        <!-- Filter Section -->
+        <div style="text-align: center; margin-bottom: var(--space-lg);">
+          <h2 style="margin-bottom: var(--space-lg);">Explore All Master Chefs</h2>
+          <p style="color: var(--color-text-light); margin-bottom: var(--space-lg);">Filter by cuisine or region to find your next culinary inspiration</p>
+          <div class="chef-filters">
+            <button class="chef-filter-btn active" data-filter="all">All Chefs (36)</button>
+            <button class="chef-filter-btn" data-filter="french">French (6)</button>
+            <button class="chef-filter-btn" data-filter="asian">Asian (8)</button>
+            <button class="chef-filter-btn" data-filter="latin">Latin (6)</button>
+            <button class="chef-filter-btn" data-filter="italian">Italian (5)</button>
+            <button class="chef-filter-btn" data-filter="mediterranean">Mediterranean (5)</button>
+          </div>
+        </div>
+
+        <!-- All Chef Cards -->
+        <div class="chef-cards-grid" id="chef-grid">
+          <!-- French Chefs -->
+          <div class="chef-card-compact" data-cuisine="french">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&h=300&fit=crop&q=80" alt="Jean-Pierre Fontaine" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Jean-Pierre Fontaine</h3>
+              <p class="chef-card-compact__specialty">Modern French Gastronomy</p>
+              <p class="chef-card-compact__bio">Michelin 2-star chef pioneering contemporary French techniques while respecting tradition.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+              <div class="chef-card-compact__meta">
+                <div>Available Soon</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="french">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&h=300&fit=crop&q=80" alt="Sophie Marchand" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Sophie Marchand</h3>
+              <p class="chef-card-compact__specialty">French Pastry Master</p>
+              <p class="chef-card-compact__bio">Renowned pastry chef and author. Specializes in French desserts, croissants, and classical techniques.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="french">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop&q=80" alt="Michel Beaumont" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Michel Beaumont</h3>
+              <p class="chef-card-compact__specialty">Provence Regional Expert</p>
+              <p class="chef-card-compact__bio">Expert in Mediterranean-French fusion. Master of provençal cooking and seasonal ingredients.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="french">
+            <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=300&fit=crop&q=80" alt="Claude Dupont" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Claude Dupont</h3>
+              <p class="chef-card-compact__specialty">French Culinary School Founder</p>
+              <p class="chef-card-compact__bio">Founded prestigious culinary academy. Expert in sauce-making and classical French fundamentals.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="french">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop&q=80" alt="Isabelle Gourmet" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Isabelle Gourmet</h3>
+              <p class="chef-card-compact__specialty">Modern Lyonnaise Cuisine</p>
+              <p class="chef-card-compact__bio">Chef of a Michelin 2-star restaurant in Lyon. Masters traditional Lyonnaise cooking with innovation.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="french">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop&q=80" alt="Francois Legrand" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Francois Legrand</h3>
+              <p class="chef-card-compact__specialty">Wine & Food Pairing Expert</p>
+              <p class="chef-card-compact__bio">Michelin 1-star chef specializing in wine pairings and classic French preparations.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <!-- Asian Chefs -->
+          <div class="chef-card-compact" data-cuisine="asian">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=300&fit=crop&q=80" alt="Yuki Tanaka" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Yuki Tanaka</h3>
+              <p class="chef-card-compact__specialty">Traditional Japanese Kaiseki</p>
+              <p class="chef-card-compact__bio">Master of kaiseki cuisine. Expert in seasonal cooking and artistic Japanese presentations.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="asian">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&q=80" alt="Chef Soy Zhang" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Soy Zhang</h3>
+              <p class="chef-card-compact__specialty">Hunan Heat Master</p>
+              <p class="chef-card-compact__bio">Expert in authentic Hunan cuisine. Master of chilies, numbing spices, and wok technique.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="asian">
+            <img src="https://images.unsplash.com/photo-1517849845537-1d51a20414de?w=400&h=300&fit=crop&q=80" alt="Priya Sharma" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Priya Sharma</h3>
+              <p class="chef-card-compact__specialty">Indian Spice Master</p>
+              <p class="chef-card-compact__bio">Michelin 1-star for Indian cuisine. Expert in tempering, spice science, and regional variations.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="asian">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=300&fit=crop&q=80" alt="Somchai Bangkok" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Somchai Bangkok</h3>
+              <p class="chef-card-compact__specialty">Thai Street Mastery</p>
+              <p class="chef-card-compact__bio">Bangkok street food legend. Expert in authentic Thai flavor balancing and fast-paced cooking.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="asian">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=300&fit=crop&q=80" alt="Wei Liu" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Wei Liu</h3>
+              <p class="chef-card-compact__specialty">Beijing Duck Master</p>
+              <p class="chef-card-compact__bio">Specializes in Peking duck and northern Chinese cooking. Precision roasting expert.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="asian">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&q=80" alt="Aiko Sato" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Aiko Sato</h3>
+              <p class="chef-card-compact__specialty">Sushi & Knife Skills</p>
+              <p class="chef-card-compact__bio">Master sushi craftsperson. Expert in knife work, fish selection, and rice preparation.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="asian">
+            <img src="https://images.unsplash.com/photo-1516637090635-c8a60a9a59f6?w=400&h=300&fit=crop&q=80" alt="Chef Min Ho" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Min Ho</h3>
+              <p class="chef-card-compact__specialty">Korean Banchan Expert</p>
+              <p class="chef-card-compact__bio">Master of Korean side dishes and fermentation. Expert in kimchi and traditional preservation.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <!-- Italian Chefs -->
+          <div class="chef-card-compact" data-cuisine="italian">
+            <img src="https://images.unsplash.com/photo-1498579150354-977475b7ea0b?w=400&h=300&fit=crop&q=80" alt="Marco Rossi" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Marco Rossi</h3>
+              <p class="chef-card-compact__specialty">Italian Pasta Master</p>
+              <p class="chef-card-compact__bio">Michelin 2-star. Expert in fresh pasta making, regional Italian traditions, and Michelin-level precision.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="italian">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop&q=80" alt="Giulia Moretti" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Giulia Moretti</h3>
+              <p class="chef-card-compact__specialty">Tuscan Regional Cuisine</p>
+              <p class="chef-card-compact__bio">Tuscan farmhouse cooking expert. Master of slow food principles and local ingredients.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="italian">
+            <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=300&fit=crop&q=80" alt="Antonio Bellini" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Antonio Bellini</h3>
+              <p class="chef-card-compact__specialty">Sicilian Heritage</p>
+              <p class="chef-card-compact__bio">Master of Sicilian cooking. Expert in Arab-Norman fusion and Mediterranean citrus techniques.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="italian">
+            <img src="https://images.unsplash.com/photo-1606787346850-de6330128bfc?w=400&h=300&fit=crop&q=80" alt="Raffaele Costa" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Raffaele Costa</h3>
+              <p class="chef-card-compact__specialty">Modern Italian Technique</p>
+              <p class="chef-card-compact__bio">Michelin 1-star. Blends classical Italian with contemporary innovation.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="italian">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop&q=80" alt="Alessandra Rizzo" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Alessandra Rizzo</h3>
+              <p class="chef-card-compact__specialty">Northern Italian Mastery</p>
+              <p class="chef-card-compact__bio">Expert in risotto, polenta, and Alpine cooking traditions.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <!-- Latin American Chefs -->
+          <div class="chef-card-compact" data-cuisine="latin">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop&q=80" alt="Sofia Garcia" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Sofia Garcia</h3>
+              <p class="chef-card-compact__specialty">Mexican Mole Expert</p>
+              <p class="chef-card-compact__bio">Expert in traditional mole preparation and Oaxacan cooking.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="latin">
+            <img src="https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?w=400&h=300&fit=crop&q=80" alt="Diego Flores" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Diego Flores</h3>
+              <p class="chef-card-compact__specialty">Peruvian Ceviche Master</p>
+              <p class="chef-card-compact__bio">Lima's culinary ambassador. Expert in ceviche, seafood, and coastal Peruvian techniques.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="latin">
+            <img src="https://images.unsplash.com/photo-1451984267348-ce0d49cc89f0?w=400&h=300&fit=crop&q=80" alt="Leonardo Santos" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Leonardo Santos</h3>
+              <p class="chef-card-compact__specialty">Brazilian Churrasco Master</p>
+              <p class="chef-card-compact__bio">Expert in Brazilian grilling, tropical ingredients, and churrascaria techniques.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="latin">
+            <img src="https://images.unsplash.com/photo-1486440185603-c3f1be260b7c?w=400&h=300&fit=crop&q=80" alt="Rosa Mendez" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Rosa Mendez</h3>
+              <p class="chef-card-compact__specialty">Colombian Street Cooking</p>
+              <p class="chef-card-compact__bio">Expert in Colombian street food, arepas, and traditional techniques.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="latin">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop&q=80" alt="Miguel Ruiz" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Miguel Ruiz</h3>
+              <p class="chef-card-compact__specialty">Central American Fusion</p>
+              <p class="chef-card-compact__bio">Expert in Central American cooking and sustainable sourcing.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <!-- Mediterranean Chefs -->
+          <div class="chef-card-compact" data-cuisine="mediterranean">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop&q=80" alt="Dimitri Papadopoulos" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Dimitri Papadopoulos</h3>
+              <p class="chef-card-compact__specialty">Greek Mediterranean</p>
+              <p class="chef-card-compact__bio">Expert in Greek regional cooking and Mediterranean nutrition.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="mediterranean">
+            <img src="https://images.unsplash.com/photo-1441512202473-8481fbc617fe?w=400&h=300&fit=crop&q=80" alt="Elena Rosetto" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Elena Rosetto</h3>
+              <p class="chef-card-compact__specialty">Spanish Tapas Master</p>
+              <p class="chef-card-compact__bio">Expert in Spanish tapas, jamón, and regional Spanish techniques.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="mediterranean">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&q=80" alt="Hassan Al-Wahab" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Hassan Al-Wahab</h3>
+              <p class="chef-card-compact__specialty">Lebanese Cooking</p>
+              <p class="chef-card-compact__bio">Expert in Middle Eastern and Lebanese traditional cooking.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="mediterranean">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=300&fit=crop&q=80" alt="Fatima Berber" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Fatima Berber</h3>
+              <p class="chef-card-compact__specialty">Moroccan Cuisine</p>
+              <p class="chef-card-compact__bio">Expert in Moroccan tagines, spices, and traditional techniques.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+
+          <div class="chef-card-compact" data-cuisine="mediterranean">
+            <img src="https://images.unsplash.com/photo-1458978185535-bbe8d66ccd2f?w=400&h=300&fit=crop&q=80" alt="Yiannis Papadopoulos" class="chef-card-compact__image">
+            <div class="chef-card-compact__body">
+              <h3 class="chef-card-compact__name">Yiannis Papadopoulos</h3>
+              <p class="chef-card-compact__specialty">Island Greek Cuisine</p>
+              <p class="chef-card-compact__bio">Expert in Aegean island cooking and traditional Mediterranean techniques.</p>
+              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="section section--primary newsletter">
+      <div class="container container--narrow">
+        <h2 class="section__title">Start Learning From Masters</h2>
+        <form class="newsletter__form">
+          <input type="email" class="newsletter__input" placeholder="your@email.com" required>
+          <button type="submit" class="btn btn--accent btn--lg">Subscribe to Updates</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">👨‍🍳 Learn<span>ToChef</span></div>
+          <p class="footer__brand-text">Learn to cook from the world's greatest chefs through structured learning paths and technique mastery.</p>
+        </div>
+        <nav aria-label="Explore">
+          <h3 class="footer__column-title">Explore</h3>
+          <div class="footer__links">
+            <a href="/" class="footer__link">&#8594; Home</a>
+            <a href="/chefs/" class="footer__link">&#8594; Master Chefs</a>
+            <a href="/#techniques" class="footer__link">&#8594; Techniques</a>
+            <a href="/#cuisines" class="footer__link">&#8594; Cuisines</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Learn To Chef. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+
+  <script>
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.chef-filter-btn');
+    const chefCards = document.querySelectorAll('.chef-card-compact');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const filter = this.getAttribute('data-filter');
+
+        filterBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        chefCards.forEach(card => {
+          const cuisine = card.getAttribute('data-cuisine');
+          if (filter === 'all' || cuisine === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
