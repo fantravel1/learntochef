@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Master Chef Directory | Learn to Cook from the World's Greatest Chefs — Learn To Chef</title>
-  <meta name="description" content="Explore 36+ culinary masters from around the world. Learn French, Asian, Latin American, Mediterranean, and more cuisines from legendary chefs. Browse by cuisine, region, or difficulty level.">
-  <meta name="keywords" content="master chefs, culinary masters, cooking from chefs, world cuisine, chef directory, learn cooking, culinary education">
-  <meta name="author" content="Learn To Chef">
+  <title>Chef Directory | 129+ Chef Profiles — Learn To Chef</title>
+  <meta name="description" content="Browse 129+ chef profiles. Learn from professional culinary masters and discover amateur home cooking personas. Find your culinary inspiration.">
+  <meta name="keywords" content="chefs, culinary masters, home cooks, chef profiles, cooking inspiration, amateur chefs, professional chefs">
   <link rel="canonical" href="https://learntochef.com/chefs/">
+  <meta property="og:title" content="Chef Directory — Learn To Chef">
+  <meta property="og:description" content="Browse 129+ chef profiles from professional masters to amateur home cooks.">
+  <meta property="og:url" content="https://learntochef.com/chefs/">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
@@ -16,24 +18,20 @@
   <style>
     .chefs-hero { background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%); color: white; padding: var(--space-xl) 0; text-align: center; }
     .chefs-hero h1 { font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: var(--space-md); }
-    .chefs-hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.95; }
-    .chef-filters { display: flex; flex-wrap: wrap; gap: var(--space-md); margin-bottom: var(--space-lg); justify-content: center; }
-    .chef-filter-btn { padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); background: white; border-radius: 20px; cursor: pointer; font-size: var(--text-sm); font-weight: 600; transition: all 0.3s; }
-    .chef-filter-btn:hover, .chef-filter-btn.active { background: var(--color-accent); color: white; border-color: var(--color-accent); }
-    .chef-cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-lg); margin-top: var(--space-lg); }
-    .chef-card-compact { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
-    .chef-card-compact:hover { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
-    .chef-card-compact__image { width: 100%; height: 250px; object-fit: cover; }
-    .chef-card-compact__body { padding: var(--space-lg); }
-    .chef-card-compact__name { font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: var(--space-xs); }
-    .chef-card-compact__specialty { font-size: var(--text-sm); color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-sm); }
-    .chef-card-compact__bio { font-size: 0.95rem; line-height: 1.6; color: var(--color-text-light); margin-bottom: var(--space-md); }
-    .chef-card-compact__link { display: inline-block; color: var(--color-accent); font-weight: 600; text-decoration: none; }
-    .chef-card-compact__link:hover { text-decoration: underline; }
-    .chef-card-compact__meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-sm); font-size: 0.85rem; color: var(--color-text-light); }
-    .featured-chefs { margin-bottom: var(--space-xl); background: var(--color-bg-light); padding: var(--space-lg); border-radius: 8px; }
-    .featured-chefs h2 { margin-bottom: var(--space-md); }
-    .featured-banner { text-align: center; margin-bottom: var(--space-lg); color: var(--color-text-light); font-size: 0.95rem; }
+    .chefs-hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto; opacity: 0.95; }
+    .breadcrumb { padding: var(--space-md) 0; font-size: var(--text-sm); color: var(--color-text-light); }
+    .breadcrumb a { color: var(--color-accent); text-decoration: none; }
+    .section-divider { margin: var(--space-xl) 0; border: none; border-top: 1px solid var(--color-border); }
+    .chef-section-header { text-align: center; margin-bottom: var(--space-lg); }
+    .chef-section-header h2 { font-family: var(--font-serif); font-size: 2rem; margin-bottom: var(--space-sm); }
+    .chef-section-header p { color: var(--color-text-light); }
+    .chef-link-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--space-md); margin-bottom: var(--space-xl); }
+    .chef-link-card { display: flex; align-items: center; justify-content: space-between; padding: var(--space-md) var(--space-lg); background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); text-decoration: none; color: var(--color-text); transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid var(--color-accent); }
+    .chef-link-card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,0.12); }
+    .chef-link-card--amateur { border-left-color: #27ae60; }
+    .chef-link-card__name { font-weight: 600; font-size: 0.95rem; }
+    .chef-link-card__arrow { color: var(--color-accent); font-size: 1.2rem; }
+    .chef-link-card--amateur .chef-link-card__arrow { color: #27ae60; }
   </style>
 </head>
 <body>
@@ -44,10 +42,10 @@
         <span class="header__logo-text">Learn<span>ToChef</span></span>
       </a>
       <nav class="header__nav" role="navigation" aria-label="Main Navigation">
-        <a href="/#journey" class="header__nav-link">Your Journey</a>
-        <a href="/chefs/" class="header__nav-link">Master Chefs</a>
-        <a href="/#techniques" class="header__nav-link">Techniques</a>
-        <a href="/#cuisines" class="header__nav-link">Cuisines</a>
+        <a href="/dishes/" class="header__nav-link">Dishes</a>
+        <a href="/chefs/" class="header__nav-link">Chefs</a>
+        <a href="/techniques/" class="header__nav-link">Techniques</a>
+        <a href="/ingredients/" class="header__nav-link">Ingredients</a>
       </nav>
       <div class="header__actions">
         <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
@@ -60,405 +58,589 @@
   </header>
 
   <main>
-    <!-- HERO SECTION -->
     <div class="chefs-hero">
       <div class="container">
-        <h1>Master Chef Directory</h1>
-        <p>Learn to cook from 36+ culinary masters around the world. Each chef brings unique techniques, traditions, and philosophies to transform your cooking.</p>
+        <h1>Chef Directory</h1>
+        <p>Explore 129+ chef profiles. From world-renowned culinary masters to amateur home cooking personas — find your cooking inspiration.</p>
       </div>
     </div>
 
-    <!-- MAIN CONTENT -->
     <section class="section">
       <div class="container">
-        <!-- Featured Chefs -->
-        <div class="featured-chefs">
-          <h2 style="text-align: center;">🌟 Featured Culinary Masters</h2>
-          <p class="featured-banner">Start your learning journey with our three most comprehensive curriculum guides</p>
-          <div class="chef-cards-grid" style="margin-top: var(--space-lg);">
-            <!-- Featured 1: Auguste Rousseau -->
-            <div class="chef-card-compact">
-              <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&h=300&fit=crop&q=80" alt="Auguste Rousseau" class="chef-card-compact__image">
-              <div class="chef-card-compact__body">
-                <h3 class="chef-card-compact__name">Auguste Rousseau</h3>
-                <p class="chef-card-compact__specialty">French Classical Cuisine</p>
-                <p class="chef-card-compact__bio">30 years commanding kitchens from Lyon to New York. Master of mother sauces and classical French technique.</p>
-                <a href="/chefs/auguste-rousseau/" class="chef-card-compact__link">Full Curriculum →</a>
-                <div class="chef-card-compact__meta">
-                  <div>87 Recipes</div>
-                  <div>⭐⭐⭐ 3 Stars</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Featured 2: Mei Lin Tanaka -->
-            <div class="chef-card-compact">
-              <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=400&h=300&fit=crop&q=80" alt="Mei Lin Tanaka" class="chef-card-compact__image">
-              <div class="chef-card-compact__body">
-                <h3 class="chef-card-compact__name">Mei Lin Tanaka</h3>
-                <p class="chef-card-compact__specialty">Pan-Asian & Umami</p>
-                <p class="chef-card-compact__bio">Foremost authority on umami science. Born in Taipei, trained in Tokyo. Wok mastery expertise.</p>
-                <a href="/chefs/mei-lin-tanaka/" class="chef-card-compact__link">Full Curriculum →</a>
-                <div class="chef-card-compact__meta">
-                  <div>112 Recipes</div>
-                  <div>⭐⭐ 2 Stars</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Featured 3: Carlos Mendoza Rivera -->
-            <div class="chef-card-compact">
-              <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=400&h=300&fit=crop&q=80" alt="Carlos Mendoza Rivera" class="chef-card-compact__image">
-              <div class="chef-card-compact__body">
-                <h3 class="chef-card-compact__name">Carlos Mendoza Rivera</h3>
-                <p class="chef-card-compact__specialty">Latin American Fire</p>
-                <p class="chef-card-compact__bio">Two decades preserving Latin American heritage. Expert in open-fire cooking and mole traditions.</p>
-                <a href="/chefs/carlos-mendoza-rivera/" class="chef-card-compact__link">Full Curriculum →</a>
-                <div class="chef-card-compact__meta">
-                  <div>95 Recipes</div>
-                  <div>⭐ 1 Star</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <hr class="section-divider" style="margin: var(--space-xl) 0;">
-
-        <!-- Filter Section -->
-        <div style="text-align: center; margin-bottom: var(--space-lg);">
-          <h2 style="margin-bottom: var(--space-lg);">Explore All Master Chefs</h2>
-          <p style="color: var(--color-text-light); margin-bottom: var(--space-lg);">Filter by cuisine or region to find your next culinary inspiration</p>
-          <div class="chef-filters">
-            <button class="chef-filter-btn active" data-filter="all">All Chefs (36)</button>
-            <button class="chef-filter-btn" data-filter="french">French (6)</button>
-            <button class="chef-filter-btn" data-filter="asian">Asian (8)</button>
-            <button class="chef-filter-btn" data-filter="latin">Latin (6)</button>
-            <button class="chef-filter-btn" data-filter="italian">Italian (5)</button>
-            <button class="chef-filter-btn" data-filter="mediterranean">Mediterranean (5)</button>
-          </div>
-        </div>
-
-        <!-- All Chef Cards -->
-        <div class="chef-cards-grid" id="chef-grid">
-          <!-- French Chefs -->
-          <div class="chef-card-compact" data-cuisine="french">
-            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&h=300&fit=crop&q=80" alt="Jean-Pierre Fontaine" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Jean-Pierre Fontaine</h3>
-              <p class="chef-card-compact__specialty">Modern French Gastronomy</p>
-              <p class="chef-card-compact__bio">Michelin 2-star chef pioneering contemporary French techniques while respecting tradition.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-              <div class="chef-card-compact__meta">
-                <div>Available Soon</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="french">
-            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&h=300&fit=crop&q=80" alt="Sophie Marchand" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Sophie Marchand</h3>
-              <p class="chef-card-compact__specialty">French Pastry Master</p>
-              <p class="chef-card-compact__bio">Renowned pastry chef and author. Specializes in French desserts, croissants, and classical techniques.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="french">
-            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop&q=80" alt="Michel Beaumont" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Michel Beaumont</h3>
-              <p class="chef-card-compact__specialty">Provence Regional Expert</p>
-              <p class="chef-card-compact__bio">Expert in Mediterranean-French fusion. Master of provençal cooking and seasonal ingredients.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="french">
-            <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=300&fit=crop&q=80" alt="Claude Dupont" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Claude Dupont</h3>
-              <p class="chef-card-compact__specialty">French Culinary School Founder</p>
-              <p class="chef-card-compact__bio">Founded prestigious culinary academy. Expert in sauce-making and classical French fundamentals.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="french">
-            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop&q=80" alt="Isabelle Gourmet" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Isabelle Gourmet</h3>
-              <p class="chef-card-compact__specialty">Modern Lyonnaise Cuisine</p>
-              <p class="chef-card-compact__bio">Chef of a Michelin 2-star restaurant in Lyon. Masters traditional Lyonnaise cooking with innovation.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="french">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop&q=80" alt="Francois Legrand" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Francois Legrand</h3>
-              <p class="chef-card-compact__specialty">Wine & Food Pairing Expert</p>
-              <p class="chef-card-compact__bio">Michelin 1-star chef specializing in wine pairings and classic French preparations.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <!-- Asian Chefs -->
-          <div class="chef-card-compact" data-cuisine="asian">
-            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=300&fit=crop&q=80" alt="Yuki Tanaka" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Yuki Tanaka</h3>
-              <p class="chef-card-compact__specialty">Traditional Japanese Kaiseki</p>
-              <p class="chef-card-compact__bio">Master of kaiseki cuisine. Expert in seasonal cooking and artistic Japanese presentations.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="asian">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&q=80" alt="Chef Soy Zhang" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Soy Zhang</h3>
-              <p class="chef-card-compact__specialty">Hunan Heat Master</p>
-              <p class="chef-card-compact__bio">Expert in authentic Hunan cuisine. Master of chilies, numbing spices, and wok technique.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="asian">
-            <img src="https://images.unsplash.com/photo-1517849845537-1d51a20414de?w=400&h=300&fit=crop&q=80" alt="Priya Sharma" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Priya Sharma</h3>
-              <p class="chef-card-compact__specialty">Indian Spice Master</p>
-              <p class="chef-card-compact__bio">Michelin 1-star for Indian cuisine. Expert in tempering, spice science, and regional variations.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="asian">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=300&fit=crop&q=80" alt="Somchai Bangkok" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Somchai Bangkok</h3>
-              <p class="chef-card-compact__specialty">Thai Street Mastery</p>
-              <p class="chef-card-compact__bio">Bangkok street food legend. Expert in authentic Thai flavor balancing and fast-paced cooking.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="asian">
-            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=300&fit=crop&q=80" alt="Wei Liu" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Wei Liu</h3>
-              <p class="chef-card-compact__specialty">Beijing Duck Master</p>
-              <p class="chef-card-compact__bio">Specializes in Peking duck and northern Chinese cooking. Precision roasting expert.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="asian">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&q=80" alt="Aiko Sato" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Aiko Sato</h3>
-              <p class="chef-card-compact__specialty">Sushi & Knife Skills</p>
-              <p class="chef-card-compact__bio">Master sushi craftsperson. Expert in knife work, fish selection, and rice preparation.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="asian">
-            <img src="https://images.unsplash.com/photo-1516637090635-c8a60a9a59f6?w=400&h=300&fit=crop&q=80" alt="Chef Min Ho" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Min Ho</h3>
-              <p class="chef-card-compact__specialty">Korean Banchan Expert</p>
-              <p class="chef-card-compact__bio">Master of Korean side dishes and fermentation. Expert in kimchi and traditional preservation.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <!-- Italian Chefs -->
-          <div class="chef-card-compact" data-cuisine="italian">
-            <img src="https://images.unsplash.com/photo-1498579150354-977475b7ea0b?w=400&h=300&fit=crop&q=80" alt="Marco Rossi" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Marco Rossi</h3>
-              <p class="chef-card-compact__specialty">Italian Pasta Master</p>
-              <p class="chef-card-compact__bio">Michelin 2-star. Expert in fresh pasta making, regional Italian traditions, and Michelin-level precision.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="italian">
-            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop&q=80" alt="Giulia Moretti" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Giulia Moretti</h3>
-              <p class="chef-card-compact__specialty">Tuscan Regional Cuisine</p>
-              <p class="chef-card-compact__bio">Tuscan farmhouse cooking expert. Master of slow food principles and local ingredients.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="italian">
-            <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=300&fit=crop&q=80" alt="Antonio Bellini" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Antonio Bellini</h3>
-              <p class="chef-card-compact__specialty">Sicilian Heritage</p>
-              <p class="chef-card-compact__bio">Master of Sicilian cooking. Expert in Arab-Norman fusion and Mediterranean citrus techniques.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="italian">
-            <img src="https://images.unsplash.com/photo-1606787346850-de6330128bfc?w=400&h=300&fit=crop&q=80" alt="Raffaele Costa" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Raffaele Costa</h3>
-              <p class="chef-card-compact__specialty">Modern Italian Technique</p>
-              <p class="chef-card-compact__bio">Michelin 1-star. Blends classical Italian with contemporary innovation.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="italian">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop&q=80" alt="Alessandra Rizzo" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Alessandra Rizzo</h3>
-              <p class="chef-card-compact__specialty">Northern Italian Mastery</p>
-              <p class="chef-card-compact__bio">Expert in risotto, polenta, and Alpine cooking traditions.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <!-- Latin American Chefs -->
-          <div class="chef-card-compact" data-cuisine="latin">
-            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop&q=80" alt="Sofia Garcia" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Sofia Garcia</h3>
-              <p class="chef-card-compact__specialty">Mexican Mole Expert</p>
-              <p class="chef-card-compact__bio">Expert in traditional mole preparation and Oaxacan cooking.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="latin">
-            <img src="https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?w=400&h=300&fit=crop&q=80" alt="Diego Flores" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Diego Flores</h3>
-              <p class="chef-card-compact__specialty">Peruvian Ceviche Master</p>
-              <p class="chef-card-compact__bio">Lima's culinary ambassador. Expert in ceviche, seafood, and coastal Peruvian techniques.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="latin">
-            <img src="https://images.unsplash.com/photo-1451984267348-ce0d49cc89f0?w=400&h=300&fit=crop&q=80" alt="Leonardo Santos" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Leonardo Santos</h3>
-              <p class="chef-card-compact__specialty">Brazilian Churrasco Master</p>
-              <p class="chef-card-compact__bio">Expert in Brazilian grilling, tropical ingredients, and churrascaria techniques.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="latin">
-            <img src="https://images.unsplash.com/photo-1486440185603-c3f1be260b7c?w=400&h=300&fit=crop&q=80" alt="Rosa Mendez" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Rosa Mendez</h3>
-              <p class="chef-card-compact__specialty">Colombian Street Cooking</p>
-              <p class="chef-card-compact__bio">Expert in Colombian street food, arepas, and traditional techniques.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="latin">
-            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop&q=80" alt="Miguel Ruiz" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Miguel Ruiz</h3>
-              <p class="chef-card-compact__specialty">Central American Fusion</p>
-              <p class="chef-card-compact__bio">Expert in Central American cooking and sustainable sourcing.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <!-- Mediterranean Chefs -->
-          <div class="chef-card-compact" data-cuisine="mediterranean">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop&q=80" alt="Dimitri Papadopoulos" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Dimitri Papadopoulos</h3>
-              <p class="chef-card-compact__specialty">Greek Mediterranean</p>
-              <p class="chef-card-compact__bio">Expert in Greek regional cooking and Mediterranean nutrition.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="mediterranean">
-            <img src="https://images.unsplash.com/photo-1441512202473-8481fbc617fe?w=400&h=300&fit=crop&q=80" alt="Elena Rosetto" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Elena Rosetto</h3>
-              <p class="chef-card-compact__specialty">Spanish Tapas Master</p>
-              <p class="chef-card-compact__bio">Expert in Spanish tapas, jamón, and regional Spanish techniques.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="mediterranean">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&q=80" alt="Hassan Al-Wahab" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Hassan Al-Wahab</h3>
-              <p class="chef-card-compact__specialty">Lebanese Cooking</p>
-              <p class="chef-card-compact__bio">Expert in Middle Eastern and Lebanese traditional cooking.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="mediterranean">
-            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=300&fit=crop&q=80" alt="Fatima Berber" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Fatima Berber</h3>
-              <p class="chef-card-compact__specialty">Moroccan Cuisine</p>
-              <p class="chef-card-compact__bio">Expert in Moroccan tagines, spices, and traditional techniques.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
-
-          <div class="chef-card-compact" data-cuisine="mediterranean">
-            <img src="https://images.unsplash.com/photo-1458978185535-bbe8d66ccd2f?w=400&h=300&fit=crop&q=80" alt="Yiannis Papadopoulos" class="chef-card-compact__image">
-            <div class="chef-card-compact__body">
-              <h3 class="chef-card-compact__name">Yiannis Papadopoulos</h3>
-              <p class="chef-card-compact__specialty">Island Greek Cuisine</p>
-              <p class="chef-card-compact__bio">Expert in Aegean island cooking and traditional Mediterranean techniques.</p>
-              <a href="#" class="chef-card-compact__link">Coming Soon →</a>
-            </div>
-          </div>
+        <div class="breadcrumb">
+          <a href="/">Home</a> / <span>Chef Directory</span>
         </div>
       </div>
     </section>
 
-    <!-- Newsletter CTA -->
+    <hr class="section-divider">
+
+    <section class="section">
+      <div class="container">
+        <div class="chef-section-header">
+          <h2>Professional Chefs (28)</h2>
+          <p>Learn from world-renowned culinary masters and their signature techniques.</p>
+        </div>
+        <div class="chef-link-grid">
+          <a href="/chefs/alex-guarnaschelli.html" class="chef-link-card">
+            <span class="chef-link-card__name">Alex Guarnaschelli</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/alice-waters.html" class="chef-link-card">
+            <span class="chef-link-card__name">Alice Waters</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/auguste-rousseau.html" class="chef-link-card">
+            <span class="chef-link-card__name">Auguste Rousseau</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/bobby-flay.html" class="chef-link-card">
+            <span class="chef-link-card__name">Bobby Flay</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/carla-hall.html" class="chef-link-card">
+            <span class="chef-link-card__name">Carla Hall</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/carlos-mendoza-rivera.html" class="chef-link-card">
+            <span class="chef-link-card__name">Carlos Mendoza Rivera</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/daniel-humm.html" class="chef-link-card">
+            <span class="chef-link-card__name">Daniel Humm</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/david-chang.html" class="chef-link-card">
+            <span class="chef-link-card__name">David Chang</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/emerald-isley.html" class="chef-link-card">
+            <span class="chef-link-card__name">Emerald Isley</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/emeril-lagasse.html" class="chef-link-card">
+            <span class="chef-link-card__name">Emeril Lagasse</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/giada-de-laurentiis.html" class="chef-link-card">
+            <span class="chef-link-card__name">Giada De Laurentiis</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/grant-achatz.html" class="chef-link-card">
+            <span class="chef-link-card__name">Grant Achatz</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/ina-garten.html" class="chef-link-card">
+            <span class="chef-link-card__name">Ina Garten</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/jacques-pepin.html" class="chef-link-card">
+            <span class="chef-link-card__name">Jacques Pepin</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/jean-luc-figure.html" class="chef-link-card">
+            <span class="chef-link-card__name">Jean Luc Figure</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/julia-child.html" class="chef-link-card">
+            <span class="chef-link-card__name">Julia Child</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/lidia-bastianich.html" class="chef-link-card">
+            <span class="chef-link-card__name">Lidia Bastianich</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/marco-pierre-white.html" class="chef-link-card">
+            <span class="chef-link-card__name">Marco Pierre White</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/mario-batali.html" class="chef-link-card">
+            <span class="chef-link-card__name">Mario Batali</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/masaharu-morimoto.html" class="chef-link-card">
+            <span class="chef-link-card__name">Masaharu Morimoto</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/mei-lin-tanaka.html" class="chef-link-card">
+            <span class="chef-link-card__name">Mei Lin Tanaka</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/nancy-meyers.html" class="chef-link-card">
+            <span class="chef-link-card__name">Nancy Meyers</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/nobu-matsuhisa.html" class="chef-link-card">
+            <span class="chef-link-card__name">Nobu Matsuhisa</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/rachael-ray.html" class="chef-link-card">
+            <span class="chef-link-card__name">Rachael Ray</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/roy-choi.html" class="chef-link-card">
+            <span class="chef-link-card__name">Roy Choi</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/stephanie-izard.html" class="chef-link-card">
+            <span class="chef-link-card__name">Stephanie Izard</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/thomas-keller.html" class="chef-link-card">
+            <span class="chef-link-card__name">Thomas Keller</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/wolfgang-puck.html" class="chef-link-card">
+            <span class="chef-link-card__name">Wolfgang Puck</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section section--cream">
+      <div class="container">
+        <div class="chef-section-header">
+          <h2>Amateur Chef Profiles (101)</h2>
+          <p>Home cooking personas — specializations, tips, and approaches for everyday cooks.</p>
+        </div>
+        <div class="chef-link-grid">
+          <a href="/chefs/amateur-Dutch-oven-lover.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Dutch Oven Lover</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-air-fryer-expert.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Air Fryer Expert</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-allergy-aware-cook.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Allergy Aware Cook</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-asian-fusion-home.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Asian Fusion Home</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-bbq-pit-boss.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Bbq Pit Boss</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-beer-cooking-expert.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Beer Cooking Expert</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-blender-champion.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Blender Champion</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-bread-baker.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Bread Baker</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-bread-machine-user.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Bread Machine User</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-breakfast-burrito-expert.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Breakfast Burrito Expert</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-breakfast-champion.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Breakfast Champion</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-budget-cooking-pro.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Budget Cooking Pro</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-budget-meal-planner.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Budget Meal Planner</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-busy-parent-chef.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Busy Parent Chef</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-butter-churner.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Butter Churner</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-cake-decorator.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Cake Decorator</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-candy-maker.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Candy Maker</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-cast-iron-devotee.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Cast Iron Devotee</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-cheese-maker.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Cheese Maker</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-chocolate-lover.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Chocolate Lover</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-christmas-baker.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Christmas Baker</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-cocktail-mixer.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Cocktail Mixer</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-coffee-lover-chef.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Coffee Lover Chef</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-college-student-cook.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">College Student Cook</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-comfort-food-lover.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Comfort Food Lover</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-cookies-and-cream.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Cookies And Cream</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-cooking-for-crowds.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Cooking For Crowds</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-cooking-for-one.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Cooking For One</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-date-night-chef.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Date Night Chef</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-dessert-baker.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Dessert Baker</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-diet-friendly-chef.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Diet Friendly Chef</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-dinner-party-host.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Dinner Party Host</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-environmental-cook.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Environmental Cook</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-ethnic-food-explorer.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Ethnic Food Explorer</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-family-favorite-chef.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Family Favorite Chef</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-farmers-market-shopper.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Farmers Market Shopper</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-food-processor-guru.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Food Processor Guru</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-freezer-meal-expert.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Freezer Meal Expert</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-garden-to-table.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Garden To Table</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-grilling-champion.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Grilling Champion</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-gym-bro-chef.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Gym Bro Chef</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-healthy-eating-home.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Healthy Eating Home</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-holiday-cook.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Holiday Cook</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-homemade-cooking-basics.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Homemade Cooking Basics</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-indian-spice-master.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Indian Spice Master</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-instant-pot-guru.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Instant Pot Guru</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-italian-nonna-cooking.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Italian Nonna Cooking</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-jam-preserver.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Jam Preserver</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-kimchi-maker.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Kimchi Maker</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-kombucha-brewer.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Kombucha Brewer</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-korean-home-kitchen.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Korean Home Kitchen</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-leftover-master.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Leftover Master</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-local-food-advocate.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Local Food Advocate</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-lunch-box-packer.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Lunch Box Packer</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-meal-prep-master.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Meal Prep Master</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-mediterranean-kitchen.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Mediterranean Kitchen</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-mexican-home-cook.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Mexican Home Cook</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-microwave-chef.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Microwave Chef</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-middle-eastern-cook.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Middle Eastern Cook</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-minimalist-kitchen.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Minimalist Kitchen</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-no-bake-treats.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">No Bake Treats</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-non-stick-user.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Non Stick User</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-one-pot-meal-expert.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">One Pot Meal Expert</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-organic-kitchen.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Organic Kitchen</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-paleo-chef.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Paleo Chef</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-pasta-night-genius.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Pasta Night Genius</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-pastry-home-baker.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Pastry Home Baker</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-pickle-jar-expert.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Pickle Jar Expert</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-picky-eater-specialist.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Picky Eater Specialist</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-pizza-night-host.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Pizza Night Host</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-potluck-pro.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Potluck Pro</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-pressure-cooker-expert.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Pressure Cooker Expert</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-quick-weeknight-dinners.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Quick Weeknight Dinners</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-salad-bowl-creator.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Salad Bowl Creator</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-salad-bowl-master.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Salad Bowl Master</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-sandwich-architect.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Sandwich Architect</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-sauce-maker.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Sauce Maker</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-sauerkraut-ferment.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Sauerkraut Ferment</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-sheet-pan-dinner.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Sheet Pan Dinner</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-slow-cooker-guru.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Slow Cooker Guru</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-slow-cooker-specialist.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Slow Cooker Specialist</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-smoothie-bowl-maker.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Smoothie Bowl Maker</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-soup-season-expert.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Soup Season Expert</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-sourdough-devotee.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Sourdough Devotee</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-southern-home-cook.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Southern Home Cook</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-stainless-steel-expert.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Stainless Steel Expert</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-stir-fry-specialist.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Stir Fry Specialist</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-supplement-mixer.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Supplement Mixer</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-taco-tuesday-pro.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Taco Tuesday Pro</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-tea-ceremony-host.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Tea Ceremony Host</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-thai-home-cooking.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Thai Home Cooking</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-thanksgiving-expert.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Thanksgiving Expert</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-toaster-oven-master.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Toaster Oven Master</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-vegan-home-cook.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Vegan Home Cook</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-vegetable-cutter.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Vegetable Cutter</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-vietnamese-street-food.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Vietnamese Street Food</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-weekday-ninja.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Weekday Ninja</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-weekend-warrior.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Weekend Warrior</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-wine-pairing-home.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Wine Pairing Home</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-wok-master.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Wok Master</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/chefs/amateur-yogurt-cultures.html" class="chef-link-card chef-link-card--amateur">
+            <span class="chef-link-card__name">Yogurt Cultures</span>
+            <span class="chef-link-card__arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="section section--primary newsletter">
       <div class="container container--narrow">
-        <h2 class="section__title">Start Learning From Masters</h2>
+        <h2 class="section__title">Learn From the Best</h2>
         <form class="newsletter__form">
           <input type="email" class="newsletter__input" placeholder="your@email.com" required>
-          <button type="submit" class="btn btn--accent btn--lg">Subscribe to Updates</button>
+          <button type="submit" class="btn btn--accent btn--lg">Subscribe Free</button>
         </form>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
           <div class="footer__logo">👨‍🍳 Learn<span>ToChef</span></div>
-          <p class="footer__brand-text">Learn to cook from the world's greatest chefs through structured learning paths and technique mastery.</p>
+          <p class="footer__brand-text">Your free culinary academy. Master cooking from the world's greatest chefs.</p>
         </div>
         <nav aria-label="Explore">
           <h3 class="footer__column-title">Explore</h3>
           <div class="footer__links">
             <a href="/" class="footer__link">&#8594; Home</a>
-            <a href="/chefs/" class="footer__link">&#8594; Master Chefs</a>
-            <a href="/#techniques" class="footer__link">&#8594; Techniques</a>
-            <a href="/#cuisines" class="footer__link">&#8594; Cuisines</a>
+            <a href="/dishes/" class="footer__link">&#8594; All Dishes</a>
+            <a href="/chefs/" class="footer__link">&#8594; Chef Directory</a>
+            <a href="/techniques/" class="footer__link">&#8594; Techniques</a>
+            <a href="/ingredients/" class="footer__link">&#8594; Ingredients</a>
           </div>
         </nav>
       </div>
@@ -469,30 +651,6 @@
   </footer>
 
   <button class="back-to-top" aria-label="Back to top">&#8593;</button>
-
-  <script>
-    // Filter functionality
-    const filterBtns = document.querySelectorAll('.chef-filter-btn');
-    const chefCards = document.querySelectorAll('.chef-card-compact');
-
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', function() {
-        const filter = this.getAttribute('data-filter');
-
-        filterBtns.forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-
-        chefCards.forEach(card => {
-          const cuisine = card.getAttribute('data-cuisine');
-          if (filter === 'all' || cuisine === filter) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
-  </script>
   <script src="../js/main.js"></script>
 </body>
 </html>

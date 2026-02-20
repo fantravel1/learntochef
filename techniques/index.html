@@ -3,38 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Technique Encyclopedia | Culinary Skills Mastery — Learn To Chef</title>
-  <meta name="description" content="Master 100+ cooking techniques with step-by-step video tutorials. From knife skills to wok mastery, mother sauces to fermentation. Progressive learning paths for all skill levels.">
-  <meta name="keywords" content="cooking techniques, culinary skills, video tutorials, knife skills, wok cooking, sauces, food science">
+  <title>Technique Encyclopedia | 17 Culinary Skills Guides — Learn To Chef</title>
+  <meta name="description" content="Master 17 essential cooking techniques with step-by-step guides. From knife skills and searing to fermentation and pastry. Progressive learning for all skill levels.">
+  <meta name="keywords" content="cooking techniques, culinary skills, knife skills, searing, braising, grilling, pastry, fermentation, wok cooking, sauces">
   <link rel="canonical" href="https://learntochef.com/techniques/">
+  <meta property="og:title" content="Technique Encyclopedia — Learn To Chef">
+  <meta property="og:description" content="Master 17 essential cooking techniques with step-by-step guides.">
+  <meta property="og:url" content="https://learntochef.com/techniques/">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <style>
-    .techniques-hero { background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%); color: white; padding: var(--space-xl) 0; text-align: center; }
-    .techniques-hero h1 { font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: var(--space-md); }
-    .techniques-hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
-    .featured-banner { text-align: center; margin-bottom: var(--space-lg); color: var(--color-text-light); font-size: 0.95rem; }
-    .technique-level-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg); margin-bottom: var(--space-xl); }
-    .technique-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
-    .technique-card:hover { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
-    .technique-card__header { background: var(--color-bg-light); padding: var(--space-lg); border-top: 4px solid var(--color-accent); }
-    .technique-card__title { font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: var(--space-sm); }
-    .difficulty-dots { display: flex; gap: var(--space-xs); margin-bottom: var(--space-md); }
-    .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--color-border); }
-    .dot.filled { background: var(--color-accent); }
-    .technique-card__content { padding: var(--space-lg); }
-    .technique-card__description { font-size: 0.95rem; color: var(--color-text-light); line-height: 1.6; margin-bottom: var(--space-md); }
-    .technique-card__meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-sm); font-size: 0.85rem; color: var(--color-text-light); margin-bottom: var(--space-md); }
-    .technique-card__link { display: inline-block; color: var(--color-accent); font-weight: 600; text-decoration: none; }
-    .technique-card__link:hover { text-decoration: underline; }
-    .section-divider { margin: var(--space-xl) 0; border: none; border-top: 1px solid var(--color-border); }
+    .tech-hero { background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%); color: white; padding: var(--space-xl) 0; text-align: center; }
+    .tech-hero h1 { font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: var(--space-md); }
+    .tech-hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto; opacity: 0.95; }
     .breadcrumb { padding: var(--space-md) 0; font-size: var(--text-sm); color: var(--color-text-light); }
     .breadcrumb a { color: var(--color-accent); text-decoration: none; }
-    @media (max-width: 768px) {
-      .techniques-hero h1 { font-size: 2rem; }
-    }
+    .section-divider { margin: var(--space-xl) 0; border: none; border-top: 1px solid var(--color-border); }
+    .tech-section-header { text-align: center; margin-bottom: var(--space-lg); }
+    .tech-section-header h2 { font-family: var(--font-serif); font-size: 2rem; margin-bottom: var(--space-sm); }
+    .tech-section-header p { color: var(--color-text-light); }
+    .tech-link-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--space-md); margin-bottom: var(--space-xl); }
+    .tech-link-card { display: flex; align-items: center; justify-content: space-between; padding: var(--space-md) var(--space-lg); background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); text-decoration: none; color: var(--color-text); transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid var(--color-accent); }
+    .tech-link-card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,0.12); }
+    .tech-link-card__name { font-weight: 600; font-size: 0.95rem; }
+    .tech-link-card__arrow { color: var(--color-accent); font-size: 1.2rem; }
   </style>
 </head>
 <body>
@@ -45,9 +40,10 @@
         <span class="header__logo-text">Learn<span>ToChef</span></span>
       </a>
       <nav class="header__nav" role="navigation" aria-label="Main Navigation">
-        <a href="/chefs/" class="header__nav-link">Master Chefs</a>
+        <a href="/dishes/" class="header__nav-link">Dishes</a>
+        <a href="/chefs/" class="header__nav-link">Chefs</a>
         <a href="/techniques/" class="header__nav-link">Techniques</a>
-        <a href="/#cuisines" class="header__nav-link">Cuisines</a>
+        <a href="/ingredients/" class="header__nav-link">Ingredients</a>
       </nav>
       <div class="header__actions">
         <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
@@ -60,10 +56,10 @@
   </header>
 
   <main>
-    <div class="techniques-hero">
+    <div class="tech-hero">
       <div class="container">
         <h1>Technique Encyclopedia</h1>
-        <p>Master 100+ cooking techniques with video tutorials, practice drills, and progressive learning. From beginner fundamentals to elite mastery.</p>
+        <p>Master 17 essential cooking techniques. From foundational knife skills to advanced pastry and fermentation — build your culinary toolkit.</p>
       </div>
     </div>
 
@@ -77,280 +73,91 @@
 
     <hr class="section-divider">
 
-    <!-- FEATURED TECHNIQUES -->
-    <section class="section section--cream">
-      <div class="container">
-        <h2 style="text-align: center; margin-bottom: var(--space-md); font-family: var(--font-serif); font-size: 2rem;">⭐ Featured Techniques</h2>
-        <p class="featured-banner">Master these three foundational techniques and unlock thousands of dishes</p>
-
-        <div class="technique-level-grid">
-          <!-- Technique 1 -->
-          <div class="technique-card">
-            <div class="technique-card__header">
-              <h3 class="technique-card__title">Knife Skills Mastery</h3>
-              <div class="difficulty-dots">
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-            </div>
-            <div class="technique-card__content">
-              <p class="technique-card__description">Learn 12 essential cuts from rock chop to tourne. Master grip, posture, speed, and safety — the foundation of all cooking.</p>
-              <div class="technique-card__meta">
-                <div>✓ 12 Lessons</div>
-                <div>⏱️ 8 weeks</div>
-              </div>
-              <a href="/techniques/knife-skills-mastery/" class="technique-card__link">Master Knife Skills →</a>
-            </div>
-          </div>
-
-          <!-- Technique 2 -->
-          <div class="technique-card">
-            <div class="technique-card__header">
-              <h3 class="technique-card__title">Mother Sauces</h3>
-              <div class="difficulty-dots">
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-            </div>
-            <div class="technique-card__content">
-              <p class="technique-card__description">The five foundations of French cooking. Béchamel, Velouté, Espagnole, Hollandaise, Tomato — unlock 200+ derivative sauces.</p>
-              <div class="technique-card__meta">
-                <div>✓ 18 Lessons</div>
-                <div>🍴 Restaurant-grade</div>
-              </div>
-              <a href="/techniques/mother-sauces/" class="technique-card__link">Master Sauces →</a>
-            </div>
-          </div>
-
-          <!-- Technique 3 -->
-          <div class="technique-card">
-            <div class="technique-card__header">
-              <h3 class="technique-card__title">Wok Mastery</h3>
-              <div class="difficulty-dots">
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-            </div>
-            <div class="technique-card__content">
-              <p class="technique-card__description">High-heat Asian cooking. Heat control, stir-fry fundamentals, and complex flavors in 60 seconds. "Understanding fire is understanding life."</p>
-              <div class="technique-card__meta">
-                <div>✓ 15 Lessons</div>
-                <div>🔥 Advanced</div>
-              </div>
-              <a href="/techniques/wok-mastery/" class="technique-card__link">Master Wok →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- TECHNIQUE LEVELS -->
     <section class="section">
       <div class="container">
-        <h2 style="text-align: center; margin-bottom: var(--space-md); font-family: var(--font-serif); font-size: 2rem;">Technique Levels</h2>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-lg); margin-bottom: var(--space-xl);">
-          <div style="background: var(--color-bg-light); padding: var(--space-lg); border-radius: 8px; border-left: 4px solid var(--color-accent);">
-            <h3 style="color: var(--color-accent); margin-bottom: var(--space-sm);">🌱 Level 1: Fundamentals</h3>
-            <p style="color: var(--color-text-light); font-size: 0.95rem;">
-              Knife skills, basic sauté, roasting, boiling, seasoning basics. Master these first.
-            </p>
-          </div>
-          <div style="background: var(--color-bg-light); padding: var(--space-lg); border-radius: 8px; border-left: 4px solid var(--color-accent);">
-            <h3 style="color: var(--color-accent); margin-bottom: var(--space-sm);">🔥 Level 2: Restaurant Core</h3>
-            <p style="color: var(--color-text-light); font-size: 0.95rem;">
-              Pan sauces, emulsions, reductions, braising, grilling, wok mastery. Home cooking excellence.
-            </p>
-          </div>
-          <div style="background: var(--color-bg-light); padding: var(--space-lg); border-radius: 8px; border-left: 4px solid var(--color-accent);">
-            <h3 style="color: var(--color-accent); margin-bottom: var(--space-sm);">💎 Level 3: High Craft</h3>
-            <p style="color: var(--color-text-light); font-size: 0.95rem;">
-              Confit, sous vide, fermentation, charcuterie, pastry fundamentals.
-            </p>
-          </div>
-          <div style="background: var(--color-bg-light); padding: var(--space-lg); border-radius: 8px; border-left: 4px solid var(--color-accent);">
-            <h3 style="color: var(--color-accent); margin-bottom: var(--space-sm);">⭐ Level 4: Elite Mastery</h3>
-            <p style="color: var(--color-text-light); font-size: 0.95rem;">
-              Laminated doughs, consommé, modernist, sugar work, professional plating.
-            </p>
-          </div>
+        <div class="tech-section-header">
+          <h2>All Techniques (17)</h2>
+          <p>Each technique guide includes theory, video demonstrations, and practice exercises.</p>
+        </div>
+        <div class="tech-link-grid">
+          <a href="/techniques/braising.html" class="tech-link-card">
+            <span class="tech-link-card__name">Braising</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/caramelization.html" class="tech-link-card">
+            <span class="tech-link-card__name">Caramelization</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/emulsions.html" class="tech-link-card">
+            <span class="tech-link-card__name">Emulsions</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/fermentation.html" class="tech-link-card">
+            <span class="tech-link-card__name">Fermentation</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/frying.html" class="tech-link-card">
+            <span class="tech-link-card__name">Frying</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/grilling.html" class="tech-link-card">
+            <span class="tech-link-card__name">Grilling</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/knife-skills-mastery.html" class="tech-link-card">
+            <span class="tech-link-card__name">Knife Skills Mastery</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/mother-sauces.html" class="tech-link-card">
+            <span class="tech-link-card__name">Mother Sauces</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/pastry.html" class="tech-link-card">
+            <span class="tech-link-card__name">Pastry</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/plating.html" class="tech-link-card">
+            <span class="tech-link-card__name">Plating</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/poaching.html" class="tech-link-card">
+            <span class="tech-link-card__name">Poaching</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/roasting.html" class="tech-link-card">
+            <span class="tech-link-card__name">Roasting</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/searing.html" class="tech-link-card">
+            <span class="tech-link-card__name">Searing</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/sous-vide.html" class="tech-link-card">
+            <span class="tech-link-card__name">Sous Vide</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/steaming.html" class="tech-link-card">
+            <span class="tech-link-card__name">Steaming</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/stock-making.html" class="tech-link-card">
+            <span class="tech-link-card__name">Stock Making</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
+          <a href="/techniques/wok-mastery.html" class="tech-link-card">
+            <span class="tech-link-card__name">Wok Mastery</span>
+            <span class="tech-link-card__arrow">&rarr;</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <hr class="section-divider">
-
-    <!-- COMING SOON TECHNIQUES -->
-    <section class="section section--cream">
-      <div class="container">
-        <h2 style="text-align: center; margin-bottom: var(--space-md); font-family: var(--font-serif); font-size: 2rem;">📚 Full Technique Encyclopedia (Building)</h2>
-
-        <div class="technique-level-grid">
-          <!-- Technique: Stocks -->
-          <div class="technique-card">
-            <div class="technique-card__header">
-              <h3 class="technique-card__title">Stock Making</h3>
-              <div class="difficulty-dots">
-                <div class="dot filled"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-            </div>
-            <div class="technique-card__content">
-              <p class="technique-card__description">Brown stock, chicken stock, fish fumet. The foundation of French cooking and flavor building.</p>
-              <p class="technique-card__meta">Coming Soon</p>
-            </div>
-          </div>
-
-          <!-- Technique: Braising -->
-          <div class="technique-card">
-            <div class="technique-card__header">
-              <h3 class="technique-card__title">Braising & Braises</h3>
-              <div class="difficulty-dots">
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-            </div>
-            <div class="technique-card__content">
-              <p class="technique-card__description">Low-temperature cooking for tender, flavorful results. Coq au vin, beef bourguignon, and more.</p>
-              <p class="technique-card__meta">Coming Soon</p>
-            </div>
-          </div>
-
-          <!-- Technique: Fermentation -->
-          <div class="technique-card">
-            <div class="technique-card__header">
-              <h3 class="technique-card__title">Fermentation & Preservation</h3>
-              <div class="difficulty-dots">
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-            </div>
-            <div class="technique-card__content">
-              <p class="technique-card__description">Kimchi, sauerkraut, miso, sourdough. Ancient techniques for flavor and nutrition.</p>
-              <p class="technique-card__meta">Coming Soon</p>
-            </div>
-          </div>
-
-          <!-- Technique: Pastry -->
-          <div class="technique-card">
-            <div class="technique-card__header">
-              <h3 class="technique-card__title">Pastry Fundamentals</h3>
-              <div class="difficulty-dots">
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot"></div>
-              </div>
-            </div>
-            <div class="technique-card__content">
-              <p class="technique-card__description">Croissants, puff pastry, brioche, éclairs. Laminated doughs and precision baking.</p>
-              <p class="technique-card__meta">Coming Soon</p>
-            </div>
-          </div>
-
-          <!-- Technique: Plating -->
-          <div class="technique-card">
-            <div class="technique-card__header">
-              <h3 class="technique-card__title">Plating & Presentation</h3>
-              <div class="difficulty-dots">
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-            </div>
-            <div class="technique-card__content">
-              <p class="technique-card__description">Professional plating, color theory, height, balance. The art of presentation.</p>
-              <p class="technique-card__meta">Coming Soon</p>
-            </div>
-          </div>
-
-          <!-- Technique: Sous Vide -->
-          <div class="technique-card">
-            <div class="technique-card__header">
-              <h3 class="technique-card__title">Sous Vide & Precision Cooking</h3>
-              <div class="difficulty-dots">
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-            </div>
-            <div class="technique-card__content">
-              <p class="technique-card__description">Temperature precision, perfect doneness, and tender results. Modern culinary science.</p>
-              <p class="technique-card__meta">Coming Soon</p>
-            </div>
-          </div>
-
-          <!-- Technique: Emulsions -->
-          <div class="technique-card">
-            <div class="technique-card__header">
-              <h3 class="technique-card__title">Emulsions & Stable Sauces</h3>
-              <div class="difficulty-dots">
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-            </div>
-            <div class="technique-card__content">
-              <p class="technique-card__description">Hollandaise, béarnaise, mayonnaise, and rescue techniques for broken emulsions.</p>
-              <p class="technique-card__meta">Coming Soon</p>
-            </div>
-          </div>
-
-          <!-- Technique: Grilling -->
-          <div class="technique-card">
-            <div class="technique-card__header">
-              <h3 class="technique-card__title">Grilling & Fire Cooking</h3>
-              <div class="difficulty-dots">
-                <div class="dot filled"></div>
-                <div class="dot filled"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-            </div>
-            <div class="technique-card__content">
-              <p class="technique-card__description">Heat zones, ember management, char development, and outdoor cooking mastery.</p>
-              <p class="technique-card__meta">Coming Soon</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- NEWSLETTER CTA -->
     <section class="section section--primary newsletter">
       <div class="container container--narrow">
-        <h2 class="section__title">Become a Master of Your Craft</h2>
+        <h2 class="section__title">Master Your Technique</h2>
         <form class="newsletter__form">
           <input type="email" class="newsletter__input" placeholder="your@email.com" required>
-          <button type="submit" class="btn btn--accent btn--lg">Get Weekly Technique Videos</button>
+          <button type="submit" class="btn btn--accent btn--lg">Get Weekly Technique Guides</button>
         </form>
       </div>
     </section>
@@ -361,14 +168,16 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <div class="footer__logo">👨‍🍳 Learn<span>ToChef</span></div>
-          <p class="footer__brand-text">Master cooking techniques from the world's greatest chefs.</p>
+          <p class="footer__brand-text">Your free culinary academy. Master cooking from the world's greatest chefs.</p>
         </div>
         <nav aria-label="Explore">
           <h3 class="footer__column-title">Explore</h3>
           <div class="footer__links">
             <a href="/" class="footer__link">&#8594; Home</a>
-            <a href="/chefs/" class="footer__link">&#8594; Master Chefs</a>
+            <a href="/dishes/" class="footer__link">&#8594; All Dishes</a>
+            <a href="/chefs/" class="footer__link">&#8594; Chef Directory</a>
             <a href="/techniques/" class="footer__link">&#8594; Techniques</a>
+            <a href="/ingredients/" class="footer__link">&#8594; Ingredients</a>
           </div>
         </nav>
       </div>
