@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Carlos Mendoza Rivera | Latin American Fire & Heritage — Learn To Chef</title>
+  <meta name="description" content="Learn Latin American cooking from Carlos Mendoza Rivera. Master fire cooking, mole traditions, and Argentinian techniques. Preserving culinary heritage through teaching.">
+  <meta name="keywords" content="Carlos Mendoza, Latin American cooking, fire cooking, mole, asado, Argentine cuisine, outdoor cooking">
+  <meta name="author" content="Learn To Chef">
+  <link rel="canonical" href="https://learntochef.com/chefs/carlos-mendoza-rivera/">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://learntochef.com/chefs/carlos-mendoza-rivera/">
+  <meta property="og:title" content="Carlos Mendoza Rivera | Latin American Fire & Heritage">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=1200&h=630&fit=crop&q=80">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .chef-profile__breadcrumb { padding: var(--space-md) 0; font-size: var(--text-sm); color: var(--color-text-light); }
+    .chef-profile__breadcrumb a { color: var(--color-accent); text-decoration: none; transition: color 0.3s; }
+    .chef-profile__breadcrumb a:hover { color: var(--color-accent-dark); }
+    .chef-profile__header { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); align-items: center; margin-bottom: var(--space-xl); }
+    .chef-profile__image { width: 100%; height: 500px; object-fit: cover; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+    .chef-profile__info h1 { font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: var(--space-sm); line-height: 1.2; }
+    .chef-profile__specialty { font-size: 1.25rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-lg); }
+    .chef-profile__bio { font-size: 1.1rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: var(--space-lg); }
+    .chef-profile__stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-md); margin-bottom: var(--space-lg); }
+    .chef-profile__stat { text-align: center; padding: var(--space-md); background: var(--color-bg-light); border-radius: 8px; }
+    .chef-profile__stat-value { font-size: 2rem; font-weight: 700; color: var(--color-accent); }
+    .chef-profile__stat-label { font-size: var(--text-sm); color: var(--color-text-light); margin-top: var(--space-xs); }
+    .section-divider { margin: var(--space-xl) 0; border: none; border-top: 1px solid var(--color-border); }
+    .chef-profile__section-title { font-family: var(--font-serif); font-size: 2rem; margin-bottom: var(--space-lg); color: var(--color-text); }
+    .cuisine-map { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-md); margin-bottom: var(--space-xl); }
+    .cuisine-badge { padding: var(--space-md); background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light)); color: white; border-radius: 8px; text-align: center; font-weight: 600; }
+    .technique-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-lg); margin-bottom: var(--space-xl); }
+    .technique-item { padding: var(--space-lg); border: 1px solid var(--color-border); border-radius: 8px; background: var(--color-bg-light); }
+    .technique-item h4 { margin-bottom: var(--space-sm); color: var(--color-accent); }
+    .dish-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-md); margin-bottom: var(--space-xl); }
+    .dish-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+    .dish-card:hover { transform: translateY(-4px); box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
+    .dish-card__image { width: 100%; height: 200px; object-fit: cover; }
+    .dish-card__content { padding: var(--space-md); }
+    .dish-card__title { font-weight: 600; margin-bottom: var(--space-xs); }
+    .dish-card__description { font-size: var(--text-sm); color: var(--color-text-light); line-height: 1.5; }
+    .learning-stages { display: grid; gap: var(--space-lg); margin-bottom: var(--space-xl); }
+    .stage-box { padding: var(--space-lg); border-left: 4px solid var(--color-accent); background: var(--color-bg-light); border-radius: 4px; }
+    .stage-box h3 { color: var(--color-accent); margin-bottom: var(--space-md); }
+    .stage-box ul { list-style: none; padding: 0; }
+    .stage-box li { padding: var(--space-xs) 0; color: var(--color-text-light); }
+    .stage-box li:before { content: "✓ "; color: var(--color-accent); font-weight: 600; margin-right: var(--space-xs); }
+    .video-section { background: var(--color-bg-light); padding: var(--space-lg); border-radius: 8px; margin-bottom: var(--space-xl); }
+    .video-frame { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 4px; }
+    .video-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+    @media (max-width: 768px) {
+      .chef-profile__header { grid-template-columns: 1fr; }
+      .chef-profile__image { height: 300px; }
+      .chef-profile__info h1 { font-size: 2rem; }
+      .chef-profile__stats { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="/" class="header__logo" aria-label="Learn To Chef - Home">
+        <span class="header__logo-icon">👨‍🍳</span>
+        <span class="header__logo-text">Learn<span>ToChef</span></span>
+      </a>
+      <nav class="header__nav" role="navigation" aria-label="Main Navigation">
+        <a href="/#journey" class="header__nav-link">Your Journey</a>
+        <a href="/chefs/" class="header__nav-link">Master Chefs</a>
+        <a href="/#techniques" class="header__nav-link">Techniques</a>
+        <a href="/#cuisines" class="header__nav-link">Cuisines</a>
+      </nav>
+      <div class="header__actions">
+        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top: var(--space-lg); padding-bottom: var(--space-lg);">
+      <nav class="chef-profile__breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> / <a href="/chefs/">Master Chefs</a> / <span>Carlos Mendoza Rivera</span>
+      </nav>
+    </div>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="chef-profile__header fade-in">
+          <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=600&h=500&fit=crop&q=80" alt="Carlos Mendoza Rivera" class="chef-profile__image" width="600" height="500">
+          <div class="chef-profile__info">
+            <h1>Carlos Mendoza Rivera</h1>
+            <p class="chef-profile__specialty">Latin American & Fire Cooking</p>
+            <p class="chef-profile__bio">
+              From the open-fire asados of Argentina to the complex mole traditions of Oaxaca, Chef Rivera has spent two decades documenting and preserving Latin America's culinary heritage. His fire-cooking techniques — from building proper ember beds to controlling heat zones — are transformative. "Every great dish starts with respect for the flame," he teaches.
+            </p>
+            <div class="chef-profile__stats">
+              <div class="chef-profile__stat">
+                <div class="chef-profile__stat-value">95</div>
+                <div class="chef-profile__stat-label">Recipes</div>
+              </div>
+              <div class="chef-profile__stat">
+                <div class="chef-profile__stat-value">18</div>
+                <div class="chef-profile__stat-label">Techniques</div>
+              </div>
+              <div class="chef-profile__stat">
+                <div class="chef-profile__stat-value">1</div>
+                <div class="chef-profile__stat-label">Michelin Star</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section">
+      <div class="container">
+        <h2 class="chef-profile__section-title">The Story</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+          <p style="margin-bottom: var(--space-md); font-size: 1.1rem; line-height: 1.8;">
+            Carlos grew up in rural Argentina, where his family's asado traditions were passed down through generations. His early understanding of open-fire cooking came from family gatherings in the Pampas, where fire mastery was essential to survival and celebration.
+          </p>
+          <p style="margin-bottom: var(--space-md); font-size: 1.1rem; line-height: 1.8;">
+            He expanded his knowledge throughout Latin America, learning mole preparation in Oaxaca, ceviche techniques in Peru, and tropical cooking in Brazil. His restaurant in Buenos Aires earned one Michelin star for its focus on heritage techniques and sustainable, locally-sourced ingredients.
+          </p>
+          <p style="margin-bottom: var(--space-md); font-size: 1.1rem; line-height: 1.8;">
+            Today, Carlos is dedicated to documenting endangered cooking techniques before they disappear, and teaching the world that Latin American cuisine is far more sophisticated and diverse than commonly understood.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section section--cream">
+      <div class="container">
+        <h2 class="chef-profile__section-title">Cuisine Mastery</h2>
+        <p style="text-align: center; margin-bottom: var(--space-lg); color: var(--color-text-light);">Regional traditions and influences</p>
+        <div class="cuisine-map">
+          <div class="cuisine-badge">🇦🇷 Argentine Asado</div>
+          <div class="cuisine-badge">🇲🇽 Oaxacan Mole</div>
+          <div class="cuisine-badge">🇵🇪 Peruvian Coastal</div>
+          <div class="cuisine-badge">🔥 Open Fire</div>
+          <div class="cuisine-badge">🌶️ Chili Heritage</div>
+          <div class="cuisine-badge">🌽 Indigenous Traditions</div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section">
+      <div class="container">
+        <h2 class="chef-profile__section-title">His Technique Signature</h2>
+        <div class="technique-grid">
+          <div class="technique-item">
+            <h4>Fire Mastery</h4>
+            <p>Building proper ember beds, understanding heat zones, controlling temperature without thermometers — pure intuition developed over decades.</p>
+          </div>
+          <div class="technique-item">
+            <h4>Mole Building</h4>
+            <p>Expert in the complex art of mole preparation, layering 15+ ingredients into sophisticated, nuanced sauces.</p>
+          </div>
+          <div class="technique-item">
+            <h4>Grilling Philosophy</h4>
+            <p>Understanding different proteins, proper timing, and the Maillard reaction on open flame.</p>
+          </div>
+          <div class="technique-item">
+            <h4>Heritage Preservation</h4>
+            <p>Documenting and teaching endangered techniques, honoring indigenous and family traditions.</p>
+          </div>
+          <div class="technique-item">
+            <h4>Spice Mastery</h4>
+            <p>Understanding dried chilies, toasting spices, and building complex flavor profiles.</p>
+          </div>
+          <div class="technique-item">
+            <h4>Sustainable Sourcing</h4>
+            <p>Deep knowledge of local, seasonal ingredients and ethical sourcing practices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section section--cream">
+      <div class="container">
+        <h2 class="chef-profile__section-title">Iconic Dishes</h2>
+        <div class="dish-gallery">
+          <div class="dish-card">
+            <img src="https://images.unsplash.com/photo-1432139509613-5c4255a1d916?w=400&h=300&fit=crop&q=80" alt="Argentine Asado" class="dish-card__image">
+            <div class="dish-card__content">
+              <h3 class="dish-card__title">Argentine Asado</h3>
+              <p class="dish-card__description">Grilled meats with proper ember management and fire control. A celebration of sustainable, grass-fed beef.</p>
+            </div>
+          </div>
+          <div class="dish-card">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop&q=80" alt="Mole Negro" class="dish-card__image">
+            <div class="dish-card__content">
+              <h3 class="dish-card__title">Mole Negro</h3>
+              <p class="dish-card__description">Seven-chile mole from Oaxaca. Complex, rich, and deeply traditional.</p>
+            </div>
+          </div>
+          <div class="dish-card">
+            <img src="https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?w=400&h=300&fit=crop&q=80" alt="Ceviche" class="dish-card__image">
+            <div class="dish-card__content">
+              <h3 class="dish-card__title">Ceviche</h3>
+              <p class="dish-card__description">Fresh fish "cooked" by lime juice. A masterclass in balance and freshness.</p>
+            </div>
+          </div>
+          <div class="dish-card">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop&q=80" alt="Chiles Rellenos" class="dish-card__image">
+            <div class="dish-card__content">
+              <h3 class="dish-card__title">Chiles Rellenos</h3>
+              <p class="dish-card__description">Roasted peppers stuffed and baked. Heritage technique and flavor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section">
+      <div class="container">
+        <h2 class="chef-profile__section-title">Cook Like Carlos — The Learning Path</h2>
+        <div class="learning-stages">
+          <div class="stage-box">
+            <h3>Stage 1: Fire Fundamentals (Weeks 1-4)</h3>
+            <ul>
+              <li>Understanding different wood types and their burn profiles</li>
+              <li>Building an ember bed correctly</li>
+              <li>Reading fire temperature without instruments</li>
+              <li>Basic grilling for beef, chicken, and vegetables</li>
+              <li>Proper seasoning for open-fire cooking</li>
+              <li>Safety and maintenance of grilling equipment</li>
+            </ul>
+          </div>
+
+          <div class="stage-box">
+            <h3>Stage 2: Argentine Asado Mastery (Weeks 5-8)</h3>
+            <ul>
+              <li>Understanding cuts of beef and optimal cooking</li>
+              <li>Ember management for perfect doneness</li>
+              <li>Chimichurri preparation and variations</li>
+              <li>Asado de tira, vacio, and other traditional cuts</li>
+              <li>Creating heat zones for different proteins</li>
+              <li>Service and tradition of asado</li>
+            </ul>
+          </div>
+
+          <div class="stage-box">
+            <h3>Stage 3: Mole & Mexican Heritage (Weeks 9-12)</h3>
+            <ul>
+              <li>Identifying dried chili varieties and toasting</li>
+              <li>Building complex flavor foundations</li>
+              <li>Mole rojo and mole negro preparation</li>
+              <li>Understanding regional variations</li>
+              <li>Chiles rellenos and stuffed pepper techniques</li>
+              <li>Balancing heat, sweetness, and umami</li>
+            </ul>
+          </div>
+
+          <div class="stage-box">
+            <h3>Stage 4: South American Specialties (Weeks 13-16)</h3>
+            <ul>
+              <li>Peruvian ceviche and fish preparation</li>
+              <li>Brazilian churrasco and meat cookery</li>
+              <li>Colombian arepas and corn traditions</li>
+              <li>Andean root vegetables and their applications</li>
+              <li>Seafood cooking traditions</li>
+              <li>Regional flavor profiles and ingredients</li>
+            </ul>
+          </div>
+
+          <div class="stage-box">
+            <h3>Stage 5: Advanced Fire Techniques & Heritage (Weeks 17-20)</h3>
+            <ul>
+              <li>Advanced ember management for complex dishes</li>
+              <li>Smoking and low-and-slow cooking</li>
+              <li>Creating custom spice blends</li>
+              <li>Fusion cooking while honoring tradition</li>
+              <li>Teaching and documenting techniques</li>
+              <li>Sustainable, ethical sourcing mastery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section section--dark">
+      <div class="container">
+        <h2 class="chef-profile__section-title" style="color: white;">Watch Carlos Teach</h2>
+        <div class="video-section" style="background: rgba(0,0,0,0.3);">
+          <div class="video-frame">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jz-7gFlqq5E" title="Argentinian Asado - Fire Cooking Mastery" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section">
+      <div class="container">
+        <h2 class="chef-profile__section-title">Learn From Other Masters</h2>
+        <div class="journey__grid" style="margin-top: var(--space-lg);">
+          <div class="journey__card">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&h=500&fit=crop&q=80" alt="Auguste Rousseau" class="journey__card-image">
+            <div class="journey__card-overlay"></div>
+            <div class="journey__card-content">
+              <h3 class="journey__card-title">Auguste Rousseau</h3>
+              <p class="journey__card-text">Classical French Master</p>
+              <a href="/chefs/auguste-rousseau.html" class="journey__card-link">Explore Chef &#8594;</a>
+            </div>
+          </div>
+          <div class="journey__card">
+            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=600&h=500&fit=crop&q=80" alt="Mei Lin Tanaka" class="journey__card-image">
+            <div class="journey__card-overlay"></div>
+            <div class="journey__card-content">
+              <h3 class="journey__card-title">Mei Lin Tanaka</h3>
+              <p class="journey__card-text">Pan-Asian Umami Master</p>
+              <a href="/chefs/mei-lin-tanaka.html" class="journey__card-link">Explore Chef &#8594;</a>
+            </div>
+          </div>
+          <div class="journey__card">
+            <img src="https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=600&h=500&fit=crop&q=80" alt="Browse all chefs" class="journey__card-image">
+            <div class="journey__card-overlay"></div>
+            <div class="journey__card-content">
+              <h3 class="journey__card-title">Browse All Chefs</h3>
+              <p class="journey__card-text">Explore 36+ culinary masters</p>
+              <a href="/chefs/" class="journey__card-link">View Directory &#8594;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--primary newsletter">
+      <div class="container container--narrow">
+        <h2 class="section__title">Master Fire Cooking</h2>
+        <form class="newsletter__form">
+          <input type="email" class="newsletter__input" placeholder="your@email.com" required>
+          <button type="submit" class="btn btn--accent btn--lg">Start Learning</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">👨‍🍳 Learn<span>ToChef</span></div>
+        </div>
+        <nav aria-label="Explore">
+          <h3 class="footer__column-title">Explore</h3>
+          <div class="footer__links">
+            <a href="/#journey" class="footer__link">&#8594; Culinary Journeys</a>
+            <a href="/chefs/" class="footer__link">&#8594; Master Chefs</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Learn To Chef. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>
