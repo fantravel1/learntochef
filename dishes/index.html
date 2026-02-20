@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signature Dishes | Learn To Chef</title>
+  <meta name="description" content="Master iconic dishes from around the world. Each dish page connects techniques, ingredients, and master chefs. Learn not just recipes, but the principles behind them.">
+  <meta name="keywords" content="recipes, cooking, dishes, signature recipes, world cuisine, cooking techniques">
+  <link rel="canonical" href="https://learntochef.com/dishes/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .dishes-hero { background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%); color: white; padding: var(--space-xl) 0; text-align: center; }
+    .dishes-hero h1 { font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: var(--space-md); }
+    .dishes-hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+    .breadcrumb { padding: var(--space-md) 0; font-size: var(--text-sm); color: var(--color-text-light); }
+    .breadcrumb a { color: var(--color-accent); text-decoration: none; }
+    .section-divider { margin: var(--space-xl) 0; border: none; border-top: 1px solid var(--color-border); }
+    .dish-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-lg); margin-bottom: var(--space-xl); }
+    .dish-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .dish-card:hover { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    .dish-card__image { width: 100%; height: 240px; background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+    .dish-card__content { padding: var(--space-lg); }
+    .dish-card__cuisine { font-size: 0.85rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-sm); }
+    .dish-card__title { font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: var(--space-sm); }
+    .dish-card__difficulty { display: inline-block; font-size: 0.9rem; margin-bottom: var(--space-md); }
+    .dish-card__description { font-size: 0.95rem; color: var(--color-text-light); line-height: 1.6; margin-bottom: var(--space-md); }
+    .dish-card__meta { display: flex; gap: var(--space-md); font-size: 0.85rem; color: var(--color-text-light); margin-bottom: var(--space-md); }
+    .dish-card__link { display: inline-block; color: var(--color-accent); font-weight: 600; text-decoration: none; }
+    .dish-card__link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="/" class="header__logo" aria-label="Learn To Chef - Home">
+        <span class="header__logo-icon">👨‍🍳</span>
+        <span class="header__logo-text">Learn<span>ToChef</span></span>
+      </a>
+      <nav class="header__nav" role="navigation" aria-label="Main Navigation">
+        <a href="/#techniques" class="header__nav-link">Techniques</a>
+        <a href="/chefs/" class="header__nav-link">Master Chefs</a>
+        <a href="/dishes/" class="header__nav-link">Dishes</a>
+      </nav>
+      <div class="header__actions">
+        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="dishes-hero">
+      <div class="container">
+        <h1>Signature Dishes</h1>
+        <p>Master iconic dishes from around the world. Each dish connects techniques, ingredients, and the chefs who made them famous.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/">Home</a> / <span>Signature Dishes</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- FEATURED DISHES -->
+    <section class="section">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: var(--space-md); font-family: var(--font-serif); font-size: 2rem;">⭐ Master These Iconic Dishes</h2>
+        <p style="text-align: center; margin-bottom: var(--space-lg); color: var(--color-text-light);">Each dish teaches you a culinary principle</p>
+
+        <div class="dish-grid">
+          <!-- Dish 1: Coq au Vin -->
+          <div class="dish-card">
+            <div class="dish-card__image">🍷</div>
+            <div class="dish-card__content">
+              <div class="dish-card__cuisine">🇫🇷 French</div>
+              <h3 class="dish-card__title">Coq au Vin</h3>
+              <div class="dish-card__difficulty">⭐⭐⭐ Intermediate</div>
+              <p class="dish-card__description">Braised chicken in red wine. Master low-temperature cooking and how time transforms tough cuts into silk.</p>
+              <div class="dish-card__meta">
+                <div>⏱️ 2-3 hours</div>
+                <div>🍽️ Serves 4-6</div>
+              </div>
+              <a href="/dishes/coq-au-vin/" class="dish-card__link">Cook Coq au Vin →</a>
+            </div>
+          </div>
+
+          <!-- Dish 2: Pad Thai -->
+          <div class="dish-card">
+            <div class="dish-card__image">🥡</div>
+            <div class="dish-card__content">
+              <div class="dish-card__cuisine">🇹🇭 Thai</div>
+              <h3 class="dish-card__title">Pad Thai</h3>
+              <div class="dish-card__difficulty">⭐⭐ Beginner-Intermediate</div>
+              <p class="dish-card__description">Stir-fried noodles in 3 minutes. Learn speed, heat control, and the perfect balance of sweet-sour-salty-spicy.</p>
+              <div class="dish-card__meta">
+                <div>⏱️ 5 min</div>
+                <div>🍽️ Serves 2</div>
+              </div>
+              <a href="/dishes/pad-thai/" class="dish-card__link">Cook Pad Thai →</a>
+            </div>
+          </div>
+
+          <!-- Dish 3: Ceviche -->
+          <div class="dish-card">
+            <div class="dish-card__image">🐟</div>
+            <div class="dish-card__content">
+              <div class="dish-card__cuisine">🇵🇪 Peruvian</div>
+              <h3 class="dish-card__title">Ceviche</h3>
+              <div class="dish-card__difficulty">⭐ Beginner</div>
+              <p class="dish-card__description">Raw fish cured in citrus. Acid denatures protein without heat. The ultimate lesson in chemistry and fish quality.</p>
+              <div class="dish-card__meta">
+                <div>⏱️ 15 min</div>
+                <div>🍽️ Serves 4</div>
+              </div>
+              <a href="/dishes/ceviche/" class="dish-card__link">Cook Ceviche →</a>
+            </div>
+          </div>
+
+          <!-- Dish 4: Risotto Milanese -->
+          <div class="dish-card">
+            <div class="dish-card__image">🍚</div>
+            <div class="dish-card__content">
+              <div class="dish-card__cuisine">🇮🇹 Italian</div>
+              <h3 class="dish-card__title">Risotto Milanese</h3>
+              <div class="dish-card__difficulty">⭐⭐⭐ Intermediate</div>
+              <p class="dish-card__description">Creamy saffron rice from constant stirring alone. Master emulsification — a principle in sauces worldwide.</p>
+              <div class="dish-card__meta">
+                <div>⏱️ 20 min</div>
+                <div>🍽️ Serves 4</div>
+              </div>
+              <a href="/dishes/risotto-milanese/" class="dish-card__link">Cook Risotto →</a>
+            </div>
+          </div>
+
+          <!-- Dish 5: Tom Yum (Coming Soon) -->
+          <div class="dish-card">
+            <div class="dish-card__image">🍲</div>
+            <div class="dish-card__content">
+              <div class="dish-card__cuisine">🇹🇭 Thai</div>
+              <h3 class="dish-card__title">Tom Yum</h3>
+              <div class="dish-card__difficulty">⭐⭐ Beginner</div>
+              <p class="dish-card__description">Hot and sour soup. Learn flavor-building through infusion and the foundations of Thai cooking.</p>
+              <div class="dish-card__meta">
+                <div>⏱️ 20 min</div>
+                <div>🍽️ Serves 2-3</div>
+              </div>
+              <p style="color: var(--color-accent); font-weight: 600; margin-top: var(--space-md);">Coming Soon</p>
+            </div>
+          </div>
+
+          <!-- Dish 6: Chicken Tikka Masala (Coming Soon) -->
+          <div class="dish-card">
+            <div class="dish-card__image">🍛</div>
+            <div class="dish-card__content">
+              <div class="dish-card__cuisine">🇮🇳 Indian</div>
+              <h3 class="dish-card__title">Chicken Tikka Masala</h3>
+              <div class="dish-card__difficulty">⭐⭐⭐ Intermediate</div>
+              <p class="dish-card__description">Tandoori chicken in creamy sauce. Master marinating, spice building, and sauce composition.</p>
+              <div class="dish-card__meta">
+                <div>⏱️ 45 min</div>
+                <div>🍽️ Serves 4</div>
+              </div>
+              <p style="color: var(--color-accent); font-weight: 600; margin-top: var(--space-md);">Coming Soon</p>
+            </div>
+          </div>
+
+          <!-- Dish 7: Beef Bourguignon (Coming Soon) -->
+          <div class="dish-card">
+            <div class="dish-card__image">🍖</div>
+            <div class="dish-card__content">
+              <div class="dish-card__cuisine">🇫🇷 French</div>
+              <h3 class="dish-card__title">Beef Bourguignon</h3>
+              <div class="dish-card__difficulty">⭐⭐⭐ Intermediate</div>
+              <p class="dish-card__description">Beef braised in wine. Teaches organization, layering of flavors, and the power of time and heat.</p>
+              <div class="dish-card__meta">
+                <div>⏱️ 3 hours</div>
+                <div>🍽️ Serves 6</div>
+              </div>
+              <p style="color: var(--color-accent); font-weight: 600; margin-top: var(--space-md);">Coming Soon</p>
+            </div>
+          </div>
+
+          <!-- Dish 8: Pasta Carbonara (Coming Soon) -->
+          <div class="dish-card">
+            <div class="dish-card__image">🍝</div>
+            <div class="dish-card__content">
+              <div class="dish-card__cuisine">🇮🇹 Italian</div>
+              <h3 class="dish-card__title">Pasta Carbonara</h3>
+              <div class="dish-card__difficulty">⭐ Beginner</div>
+              <p class="dish-card__description">Creamy pasta without cream. Understand emulsification in its simplest, most elegant form.</p>
+              <div class="dish-card__meta">
+                <div>⏱️ 15 min</div>
+                <div>🍽️ Serves 2</div>
+              </div>
+              <p style="color: var(--color-accent); font-weight: 600; margin-top: var(--space-md);">Coming Soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- HOW TO USE THESE RECIPES -->
+    <section class="section section--cream">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: var(--space-lg); font-family: var(--font-serif); font-size: 2rem;">How to Use These Recipes</h2>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg);">
+          <div style="background: white; padding: var(--space-lg); border-radius: 8px; border-left: 4px solid var(--color-accent);">
+            <h3 style="color: var(--color-accent); margin-bottom: var(--space-sm);">📖 Read the Story</h3>
+            <p style="color: var(--color-text-light);">Each dish page starts with history and context. Understand why this dish matters before you cook it.</p>
+          </div>
+
+          <div style="background: white; padding: var(--space-lg); border-radius: 8px; border-left: 4px solid var(--color-accent);">
+            <h3 style="color: var(--color-accent); margin-bottom: var(--space-sm);">🎓 Link to Techniques</h3>
+            <p style="color: var(--color-text-light);">Each dish page shows which techniques you'll use. Master the technique separately, then apply it here.</p>
+          </div>
+
+          <div style="background: white; padding: var(--space-lg); border-radius: 8px; border-left: 4px solid var(--color-accent);">
+            <h3 style="color: var(--color-accent); margin-bottom: var(--space-sm);">👨‍🍳 Learn from Chefs</h3>
+            <p style="color: var(--color-text-light);">See which master chefs have perfected this dish. Watch their techniques, study their approach.</p>
+          </div>
+
+          <div style="background: white; padding: var(--space-lg); border-radius: 8px; border-left: 4px solid var(--color-accent);">
+            <h3 style="color: var(--color-accent); margin-bottom: var(--space-sm);">📹 Follow Videos</h3>
+            <p style="color: var(--color-text-light);">Video anchors guide you through every step. Pause, rewatch, practice until it's muscle memory.</p>
+          </div>
+
+          <div style="background: white; padding: var(--space-lg); border-radius: 8px; border-left: 4px solid var(--color-accent);">
+            <h3 style="color: var(--color-accent); margin-bottom: var(--space-sm);">👨‍🍳 Cook & Repeat</h3>
+            <p style="color: var(--color-text-light);">Cook the dish 3 times. The first time, you'll follow the recipe. The second, you'll understand it. The third, you'll own it.</p>
+          </div>
+
+          <div style="background: white; padding: var(--space-lg); border-radius: 8px; border-left: 4px solid var(--color-accent);">
+            <h3 style="color: var(--color-accent); margin-bottom: var(--space-sm);">🎯 Explore Variations</h3>
+            <p style="color: var(--color-text-light);">Once you've mastered the base recipe, explore regional variations. This is where creativity lives.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER CTA -->
+    <section class="section section--primary newsletter">
+      <div class="container container--narrow">
+        <h2 class="section__title">Cook Signature Dishes</h2>
+        <form class="newsletter__form">
+          <input type="email" class="newsletter__input" placeholder="your@email.com" required>
+          <button type="submit" class="btn btn--accent btn--lg">Get Weekly Recipes</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">👨‍🍳 Learn<span>ToChef</span></div>
+          <p class="footer__brand-text">Master cooking techniques from the world's greatest chefs.</p>
+        </div>
+        <nav aria-label="Explore">
+          <h3 class="footer__column-title">Explore</h3>
+          <div class="footer__links">
+            <a href="/" class="footer__link">&#8594; Home</a>
+            <a href="/chefs/" class="footer__link">&#8594; Master Chefs</a>
+            <a href="/#techniques" class="footer__link">&#8594; Techniques</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Learn To Chef. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>

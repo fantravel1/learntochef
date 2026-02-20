@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coq au Vin | Classic French Braised Chicken — Learn To Chef</title>
+  <meta name="description" content="Master the classic French dish Coq au Vin. Learn the technique, history, and step-by-step recipe from Thomas Keller. Discover the braising fundamentals that transform tough cuts into silk.">
+  <meta name="keywords" content="coq au vin, French cooking, braising, chicken recipe, cooking technique, French cuisine">
+  <link rel="canonical" href="https://learntochef.com/dishes/coq-au-vin/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .dish-hero { background: linear-gradient(135deg, rgba(139, 69, 19, 0.9) 0%, rgba(101, 67, 33, 0.9) 100%), url('https://images.unsplash.com/photo-1598938750952-b8d1b640ee84?w=1200&q=80') center/cover; color: white; padding: 80px 0; text-align: center; }
+    .dish-hero h1 { font-family: var(--font-serif); font-size: 3rem; margin-bottom: var(--space-md); text-shadow: 2px 2px 8px rgba(0,0,0,0.4); }
+    .dish-hero p { font-size: 1.3rem; max-width: 700px; margin: 0 auto; text-shadow: 1px 1px 4px rgba(0,0,0,0.4); }
+    .dish-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-lg); margin-top: var(--space-lg); background: rgba(255,255,255,0.1); padding: var(--space-lg); border-radius: 8px; }
+    .meta-item { text-align: center; }
+    .meta-item__label { font-size: 0.85rem; opacity: 0.9; }
+    .meta-item__value { font-size: 1.3rem; font-weight: 600; }
+    .breadcrumb { padding: var(--space-md) 0; font-size: var(--text-sm); color: var(--color-text-light); }
+    .breadcrumb a { color: var(--color-accent); text-decoration: none; }
+    .section-divider { margin: var(--space-xl) 0; border: none; border-top: 1px solid var(--color-border); }
+    .dish-section-title { font-family: var(--font-serif); font-size: 2rem; margin-bottom: var(--space-lg); color: var(--color-text); }
+    .video-frame { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin-bottom: var(--space-lg); }
+    .video-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+    .two-column { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--space-xl); margin-bottom: var(--space-xl); }
+    .ingredient-list { background: var(--color-bg-light); padding: var(--space-lg); border-radius: 8px; }
+    .ingredient-list h3 { color: var(--color-accent); margin-bottom: var(--space-md); }
+    .ingredient-list ul { list-style: none; padding: 0; }
+    .ingredient-list li { padding: var(--space-sm) 0; border-bottom: 1px solid var(--color-border); color: var(--color-text-light); }
+    .ingredient-list li:last-child { border-bottom: none; }
+    .ingredient-list li strong { color: var(--color-text); }
+    .instruction-steps { }
+    .step { margin-bottom: var(--space-lg); padding: var(--space-lg); background: var(--color-bg-light); border-radius: 8px; border-left: 4px solid var(--color-accent); }
+    .step__number { display: inline-block; width: 32px; height: 32px; background: var(--color-accent); color: white; border-radius: 50%; text-align: center; line-height: 32px; font-weight: 700; margin-right: var(--space-md); }
+    .step__title { font-weight: 600; color: var(--color-text); margin-bottom: var(--space-sm); }
+    .step__content { color: var(--color-text-light); line-height: 1.7; }
+    .tip-box { background: rgba(255, 193, 7, 0.1); padding: var(--space-lg); border-radius: 8px; border-left: 4px solid #ffc107; margin-bottom: var(--space-lg); }
+    .tip-box h4 { color: #b8860b; margin-bottom: var(--space-sm); }
+    .tip-box p { color: var(--color-text-light); }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg); }
+    .related-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .related-card__header { background: var(--color-bg-light); padding: var(--space-lg); }
+    .related-card__title { font-weight: 600; margin-bottom: var(--space-sm); }
+    .related-card__meta { font-size: 0.85rem; color: var(--color-accent); }
+    .related-card__link { display: block; padding: var(--space-lg); color: var(--color-accent); text-decoration: none; font-weight: 600; }
+    @media (max-width: 768px) {
+      .dish-hero h1 { font-size: 2rem; }
+      .dish-hero p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="/" class="header__logo" aria-label="Learn To Chef - Home">
+        <span class="header__logo-icon">👨‍🍳</span>
+        <span class="header__logo-text">Learn<span>ToChef</span></span>
+      </a>
+      <nav class="header__nav" role="navigation" aria-label="Main Navigation">
+        <a href="/#techniques" class="header__nav-link">Techniques</a>
+        <a href="/chefs/" class="header__nav-link">Master Chefs</a>
+        <a href="/dishes/" class="header__nav-link">Dishes</a>
+      </nav>
+      <div class="header__actions">
+        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <div class="dish-hero">
+      <div class="container">
+        <h1>Coq au Vin</h1>
+        <p>Classic French braised chicken in red wine. A humble dish that reveals the power of low-temperature cooking, time, and technique.</p>
+        <div class="dish-meta">
+          <div class="meta-item">
+            <div class="meta-item__label">Cuisine</div>
+            <div class="meta-item__value">🇫🇷 French</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-item__label">Difficulty</div>
+            <div class="meta-item__value">⭐⭐⭐</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-item__label">Time</div>
+            <div class="meta-item__value">2-3 hours</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-item__label">Serves</div>
+            <div class="meta-item__value">4-6</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/">Home</a> / <a href="/dishes/">Dishes</a> / <span>Coq au Vin</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- OVERVIEW -->
+    <section class="section">
+      <div class="container">
+        <h2 class="dish-section-title">The Story of Coq au Vin</h2>
+        <div style="max-width: 900px;">
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: var(--space-lg);">
+            Coq au Vin originated in Burgundy, France, as a way to use tough rooster meat (coq = rooster in French). The wine and time break down the collagen into gelatin, transforming a tough bird into something silken and luxurious. This is braising at its finest: low temperature, high time, high reward.
+          </p>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: var(--space-lg);">
+            <strong>Why this dish matters:</strong> Coq au Vin teaches you the fundamentals of braising — a technique used in cuisines worldwide. Master this one dish and you've mastered a culinary principle that unlocks thousands of recipes.
+          </p>
+
+          <div class="tip-box">
+            <h4>👨‍🍳 Chef Insight: Thomas Keller</h4>
+            <p>"Coq au Vin is not about the chicken or the wine. It's about the relationship between ingredients and time. You cannot rush it. The moment you try to rush it, you've missed the entire point."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- TECHNIQUE CONNECTION -->
+    <section class="section section--cream">
+      <div class="container">
+        <h2 class="dish-section-title">Techniques You'll Master</h2>
+        <p style="text-align: center; margin-bottom: var(--space-lg); color: var(--color-text-light);">This dish teaches you these core culinary techniques</p>
+
+        <div class="related-grid" style="margin-bottom: var(--space-lg);">
+          <a href="/techniques/braising/" style="text-decoration: none;">
+            <div class="related-card">
+              <div class="related-card__header">
+                <div class="related-card__title">🔥 Braising Fundamentals</div>
+                <div class="related-card__meta">Intermediate • 45 min</div>
+              </div>
+              <div class="related-card__link">Learn Braising →</div>
+            </div>
+          </a>
+
+          <a href="/techniques/knife-skills-mastery/" style="text-decoration: none;">
+            <div class="related-card">
+              <div class="related-card__header">
+                <div class="related-card__title">🪓 Brunoise (Pearl Onions)</div>
+                <div class="related-card__meta">Beginner • 30 min</div>
+              </div>
+              <div class="related-card__link">Learn Knife Skills →</div>
+            </div>
+          </a>
+
+          <a href="/techniques/mother-sauces/" style="text-decoration: none;">
+            <div class="related-card">
+              <div class="related-card__header">
+                <div class="related-card__title">🍯 Sauce Reduction</div>
+                <div class="related-card__meta">Intermediate • 20 min</div>
+              </div>
+              <div class="related-card__link">Learn Sauces →</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- VIDEO -->
+    <section class="section">
+      <div class="container">
+        <h2 class="dish-section-title">Watch: Coq au Vin from Start to Finish</h2>
+        <div style="max-width: 900px; margin: 0 auto;">
+          <div class="video-frame">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Coq au Vin Tutorial" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- RECIPE -->
+    <section class="section section--cream">
+      <div class="container">
+        <h2 class="dish-section-title">The Recipe</h2>
+
+        <div class="two-column">
+          <!-- INGREDIENTS -->
+          <div class="ingredient-list">
+            <h3>Ingredients</h3>
+            <ul>
+              <li><strong>1 whole chicken</strong> (3-4 lbs), cut into 8 pieces</li>
+              <li><strong>1 bottle</strong> dry red wine (Burgundy or Pinot Noir)</li>
+              <li><strong>4 oz</strong> lardons or pancetta, cut into ¼" batons</li>
+              <li><strong>2 oz</strong> butter, divided</li>
+              <li><strong>1 medium</strong> onion, quartered</li>
+              <li><strong>2</strong> carrots, cut into 2" batons</li>
+              <li><strong>2</strong> cloves garlic, smashed</li>
+              <li><strong>8 oz</strong> pearl onions, peeled</li>
+              <li><strong>8 oz</strong> mushrooms, halved</li>
+              <li><strong>2 tbsp</strong> tomato paste</li>
+              <li><strong>2 cups</strong> chicken stock</li>
+              <li><strong>Bouquet garni</strong> (thyme, bay leaf, parsley)</li>
+              <li><strong>Salt & pepper</strong> to taste</li>
+            </ul>
+          </div>
+
+          <!-- MISE EN PLACE -->
+          <div class="ingredient-list" style="background: rgba(255, 193, 7, 0.05);">
+            <h3>Mise en Place Prep</h3>
+            <ul>
+              <li>✓ Cut chicken into 8 pieces (legs, thighs, breasts halved)</li>
+              <li>✓ Peel pearl onions (blanch 1 min first if hard to peel)</li>
+              <li>✓ Cut mushrooms in half</li>
+              <li>✓ Make bouquet garni (tie herbs with kitchen twine)</li>
+              <li>✓ Cut carrots into 2" batons</li>
+              <li>✓ Cut lardons into ¼" pieces</li>
+              <li>✓ Measure all liquids</li>
+              <li>✓ Have all ingredients within arm's reach</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- INSTRUCTIONS -->
+    <section class="section">
+      <div class="container">
+        <h2 class="dish-section-title">Step-by-Step Instructions</h2>
+
+        <div class="instruction-steps">
+          <div class="step">
+            <span class="step__number">1</span>
+            <div class="step__title">Render the Lardons</div>
+            <div class="step__content">
+              In a large heavy-bottomed pot or Dutch oven over medium heat, cook the lardons until the fat is rendered and they're crispy (about 5-7 minutes). Transfer to a paper towel. This fat will be your cooking base — don't discard it.
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="step__number">2</span>
+            <div class="step__title">Sear the Chicken</div>
+            <div class="step__content">
+              Turn heat to medium-high. Working in batches, place chicken pieces skin-side down in the hot fat. Don't move them — let them develop a deep golden color (3-4 minutes per side). Season with salt and pepper. Transfer to a plate. This browning is critical — it develops flavor.
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="step__number">3</span>
+            <div class="step__title">Sauté the Aromatics</div>
+            <div class="step__content">
+              In the same pot, add the onion, carrot, and garlic. Sauté until lightly caramelized (5 minutes). Add the tomato paste and cook for 2 minutes, stirring constantly. The paste should darken slightly.
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="step__number">4</span>
+            <div class="step__title">Deglaze with Wine</div>
+            <div class="step__content">
+              Pour in the entire bottle of red wine. Bring to a boil and let it reduce by half (this takes about 10 minutes). This concentrates the wine flavor and removes the "raw" alcohol taste. You're building a sauce as you go.
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="step__number">5</span>
+            <div class="step__title">Return Chicken & Add Stock</div>
+            <div class="step__content">
+              Return the chicken (and any accumulated juices) to the pot. Pour in the chicken stock until the chicken is just covered. Add the bouquet garni. The liquid should come about ¾ of the way up the chicken. If not, add more stock.
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="step__number">6</span>
+            <div class="step__title">Braise Low & Slow</div>
+            <div class="step__content">
+              Cover the pot and place in a 325°F oven for 1.5-2 hours. The chicken should be fork-tender and the meat should be pulling from the bone. Resist the urge to crank up the heat. This long, gentle braising is what transforms tough cuts into silk.
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="step__number">7</span>
+            <div class="step__title">Cook the Vegetables</div>
+            <div class="step__content">
+              Meanwhile, in a separate pan, heat 1 tbsp butter over medium heat. Sauté the pearl onions until golden (5 minutes). Set aside. In the same pan, sauté the mushrooms with a pinch of salt until golden (5 minutes). Set aside. These will be added at the end.
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="step__number">8</span>
+            <div class="step__title">Finish & Plate</div>
+            <div class="step__content">
+              Remove the chicken from the pot and transfer to a serving dish. Strain the braising liquid through a fine sieve, discarding the aromatics and bouquet garni. Return the liquid to the pot and bring to a boil to reduce it by ¼ (about 5 minutes). Whisk in 1 tbsp butter to finish the sauce. Pour over the chicken, garnish with the cooked onions, mushrooms, and lardons.
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-box" style="margin-top: var(--space-xl);">
+          <h4>🔑 The Critical Moments</h4>
+          <p><strong>The Sear:</strong> Don't skip this. The golden crust (Maillard reaction) develops deep, complex flavors that can't be replicated any other way.</p>
+          <p style="margin-top: var(--space-md);"><strong>The Time:</strong> 1.5-2 hours is not negotiable. You need time for the collagen to break down into gelatin, which gives the sauce body and silkiness.</p>
+          <p style="margin-top: var(--space-md);"><strong>The Temperature:</strong> 325°F is lower than most home cooks use, but it's worth the extra time. High heat toughens chicken; low heat tenderizes it.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- CHEF REFERENCE -->
+    <section class="section section--cream">
+      <div class="container">
+        <h2 class="dish-section-title">Learn from Master Chefs</h2>
+        <p style="text-align: center; margin-bottom: var(--space-lg); color: var(--color-text-light);">These chefs have perfected this dish</p>
+
+        <div class="related-grid">
+          <a href="/chefs/thomas-keller/" style="text-decoration: none;">
+            <div class="related-card">
+              <div class="related-card__header">
+                <div class="related-card__title">👨‍🍳 Thomas Keller</div>
+                <div class="related-card__meta">The French Laundry, Napa Valley</div>
+              </div>
+              <div class="related-card__link">View Chef Profile →</div>
+            </div>
+          </a>
+
+          <a href="/chefs/jacques-pepin/" style="text-decoration: none;">
+            <div class="related-card">
+              <div class="related-card__header">
+                <div class="related-card__title">👨‍🍳 Jacques Pépin</div>
+                <div class="related-card__meta">French Culinary Legend</div>
+              </div>
+              <div class="related-card__link">View Chef Profile →</div>
+            </div>
+          </a>
+
+          <a href="/chefs/julia-child/" style="text-decoration: none;">
+            <div class="related-card">
+              <div class="related-card__header">
+                <div class="related-card__title">👩‍🍳 Julia Child</div>
+                <div class="related-card__meta">Mastering the Art of French Cooking</div>
+              </div>
+              <div class="related-card__link">View Chef Profile →</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER CTA -->
+    <section class="section section--primary newsletter">
+      <div class="container container--narrow">
+        <h2 class="section__title">Master Coq au Vin</h2>
+        <form class="newsletter__form">
+          <input type="email" class="newsletter__input" placeholder="your@email.com" required>
+          <button type="submit" class="btn btn--accent btn--lg">Get Weekly Dish Recipes</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">👨‍🍳 Learn<span>ToChef</span></div>
+        </div>
+        <nav aria-label="Explore">
+          <h3 class="footer__column-title">Explore</h3>
+          <div class="footer__links">
+            <a href="/" class="footer__link">&#8594; Home</a>
+            <a href="/dishes/" class="footer__link">&#8594; Dishes</a>
+            <a href="/chefs/" class="footer__link">&#8594; Chefs</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Learn To Chef. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>

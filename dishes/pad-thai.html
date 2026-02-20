@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pad Thai | Thailand's National Dish — Learn To Chef</title>
+  <meta name="description" content="Master the wok-cooked noodle dish Pad Thai. Learn stir-fry fundamentals, the balance of sweet-sour-salty-spicy, and how to cook perfect noodles in under 3 minutes.">
+  <meta name="keywords" content="pad thai, Thai cooking, stir fry, wok cooking, noodle dish, Thai cuisine">
+  <link rel="canonical" href="https://learntochef.com/dishes/pad-thai/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .dish-hero { background: linear-gradient(135deg, rgba(220, 53, 69, 0.9) 0%, rgba(255, 193, 7, 0.9) 100%), url('https://images.unsplash.com/photo-1569718212e3-3e40a5e0b000?w=1200&q=80') center/cover; color: white; padding: 80px 0; text-align: center; }
+    .dish-hero h1 { font-family: var(--font-serif); font-size: 3rem; margin-bottom: var(--space-md); text-shadow: 2px 2px 8px rgba(0,0,0,0.4); }
+    .dish-hero p { font-size: 1.3rem; max-width: 700px; margin: 0 auto; text-shadow: 1px 1px 4px rgba(0,0,0,0.4); }
+    .dish-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-lg); margin-top: var(--space-lg); background: rgba(255,255,255,0.1); padding: var(--space-lg); border-radius: 8px; }
+    .meta-item { text-align: center; }
+    .meta-item__label { font-size: 0.85rem; opacity: 0.9; }
+    .meta-item__value { font-size: 1.3rem; font-weight: 600; }
+    .breadcrumb { padding: var(--space-md) 0; font-size: var(--text-sm); color: var(--color-text-light); }
+    .breadcrumb a { color: var(--color-accent); text-decoration: none; }
+    .section-divider { margin: var(--space-xl) 0; border: none; border-top: 1px solid var(--color-border); }
+    .dish-section-title { font-family: var(--font-serif); font-size: 2rem; margin-bottom: var(--space-lg); color: var(--color-text); }
+    .video-frame { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin-bottom: var(--space-lg); }
+    .video-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+    .two-column { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--space-xl); margin-bottom: var(--space-xl); }
+    .ingredient-list { background: var(--color-bg-light); padding: var(--space-lg); border-radius: 8px; }
+    .ingredient-list h3 { color: var(--color-accent); margin-bottom: var(--space-md); }
+    .ingredient-list ul { list-style: none; padding: 0; }
+    .ingredient-list li { padding: var(--space-sm) 0; border-bottom: 1px solid var(--color-border); color: var(--color-text-light); }
+    .ingredient-list li:last-child { border-bottom: none; }
+    .ingredient-list li strong { color: var(--color-text); }
+    .instruction-steps { }
+    .step { margin-bottom: var(--space-lg); padding: var(--space-lg); background: var(--color-bg-light); border-radius: 8px; border-left: 4px solid var(--color-accent); }
+    .step__number { display: inline-block; width: 32px; height: 32px; background: var(--color-accent); color: white; border-radius: 50%; text-align: center; line-height: 32px; font-weight: 700; margin-right: var(--space-md); }
+    .step__title { font-weight: 600; color: var(--color-text); margin-bottom: var(--space-sm); }
+    .step__content { color: var(--color-text-light); line-height: 1.7; }
+    .tip-box { background: rgba(220, 53, 69, 0.1); padding: var(--space-lg); border-radius: 8px; border-left: 4px solid #dc3545; margin-bottom: var(--space-lg); }
+    .tip-box h4 { color: #c82333; margin-bottom: var(--space-sm); }
+    .tip-box p { color: var(--color-text-light); }
+  </style>
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="/" class="header__logo" aria-label="Learn To Chef - Home">
+        <span class="header__logo-icon">👨‍🍳</span>
+        <span class="header__logo-text">Learn<span>ToChef</span></span>
+      </a>
+      <nav class="header__nav" role="navigation" aria-label="Main Navigation">
+        <a href="/#techniques" class="header__nav-link">Techniques</a>
+        <a href="/chefs/" class="header__nav-link">Master Chefs</a>
+        <a href="/dishes/" class="header__nav-link">Dishes</a>
+      </nav>
+      <div class="header__actions">
+        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="dish-hero">
+      <div class="container">
+        <h1>Pad Thai</h1>
+        <p>Thailand's most famous street food. A perfect balance of sweet, sour, salty, and spicy. Master the wok and this dish is yours in 3 minutes.</p>
+        <div class="dish-meta">
+          <div class="meta-item">
+            <div class="meta-item__label">Cuisine</div>
+            <div class="meta-item__value">🇹🇭 Thai</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-item__label">Difficulty</div>
+            <div class="meta-item__value">⭐⭐</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-item__label">Time</div>
+            <div class="meta-item__value">3-5 min</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-item__label">Serves</div>
+            <div class="meta-item__value">2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/">Home</a> / <a href="/dishes/">Dishes</a> / <span>Pad Thai</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section">
+      <div class="container">
+        <h2 class="dish-section-title">Speed & Balance</h2>
+        <div style="max-width: 900px;">
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: var(--space-lg);">
+            Pad Thai is not just a noodle dish — it's a lesson in balance and speed. Every element must be prepared before you touch the wok. Everything cooks in 3 minutes. The sauce is the hero: sweet (palm sugar), sour (lime/tamarind), salty (fish sauce), spicy (chili) in perfect harmony.
+          </p>
+
+          <div class="tip-box">
+            <h4>🔥 The 60-Second Rule</h4>
+            <p>If your Pad Thai takes longer than 3 minutes once you hit the wok, something is wrong. Your wok isn't hot enough, your mise en place isn't ready, or you're overcrowding the wok.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section section--cream">
+      <div class="container">
+        <h2 class="dish-section-title">Core Techniques</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg);">
+          <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="background: var(--color-bg-light); padding: var(--space-lg);">
+              <div style="font-weight: 600; margin-bottom: var(--space-sm);">🍳 Wok Mastery</div>
+              <div style="font-size: 0.85rem; color: var(--color-accent);">Learn Wok Technique</div>
+            </div>
+            <div style="padding: var(--space-lg); color: var(--color-accent); text-decoration: none; font-weight: 600;"><a href="/techniques/wok-mastery/">Explore →</a></div>
+          </div>
+
+          <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="background: var(--color-bg-light); padding: var(--space-lg);">
+              <div style="font-weight: 600; margin-bottom: var(--space-sm);">🪓 Julienne Cut</div>
+              <div style="font-size: 0.85rem; color: var(--color-accent);">Thin Matchstick Vegetables</div>
+            </div>
+            <div style="padding: var(--space-lg); color: var(--color-accent); text-decoration: none; font-weight: 600;"><a href="/techniques/knife-skills-mastery/">Explore →</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section">
+      <div class="container">
+        <h2 class="dish-section-title">The Recipe</h2>
+
+        <div class="two-column">
+          <div class="ingredient-list">
+            <h3>Ingredients (Per Serving)</h3>
+            <ul>
+              <li><strong>8 oz</strong> rice noodles (pad thai noodles, ¼" wide)</li>
+              <li><strong>2 oz</strong> protein (shrimp, chicken, tofu, or combo)</li>
+              <li><strong>1</strong> egg</li>
+              <li><strong>1 cup</strong> vegetables (bell pepper, green beans, carrots - julienned)</li>
+              <li><strong>3 tbsp</strong> bean sprouts</li>
+              <li><strong>2</strong> cloves garlic, minced</li>
+              <li><strong>1-2</strong> scallions, cut into 1" pieces</li>
+              <li><strong>2 tbsp</strong> peanuts, crushed</li>
+            </ul>
+          </div>
+
+          <div class="ingredient-list" style="background: rgba(220, 53, 69, 0.05);">
+            <h3>The Sauce (Make First!)</h3>
+            <ul>
+              <li><strong>3 tbsp</strong> tamarind paste (or lime juice)</li>
+              <li><strong>2 tbsp</strong> fish sauce</li>
+              <li><strong>1 tbsp</strong> palm sugar (or brown sugar)</li>
+              <li><strong>1 tsp</strong> chili flakes</li>
+            </ul>
+            <p style="margin-top: var(--space-md); color: var(--color-text-light); font-size: 0.9rem;">
+              Mix all together. Taste it. If too salty, add lime juice. If too sour, add sugar. This is your flavor profile — get it right before you cook.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section section--cream">
+      <div class="container">
+        <h2 class="dish-section-title">3-Minute Cooking Sequence</h2>
+
+        <div class="instruction-steps">
+          <div class="step">
+            <span class="step__number">0:00</span>
+            <div class="step__title">Prep the Noodles</div>
+            <div class="step__content">
+              Soak rice noodles in room-temperature water for 30 minutes until pliable but still firm. Drain well. Have all mise en place ready before you touch the wok.
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="step__number">0:30</span>
+            <div class="step__title">Get the Wok Smoking</div>
+            <div class="step__content">
+              Heat wok over high heat for 2-3 minutes until smoking hot. Add 2 tbsp peanut oil. Let heat for 10 seconds. Add minced garlic. The smell should be immediate.
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="step__number">0:45</span>
+            <div class="step__title">Protein First (15 seconds)</div>
+            <div class="step__content">
+              Add protein. If shrimp, cook 1 minute per side. If chicken, cook 1-2 minutes. If tofu, just add with vegetables. Keep moving.
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="step__number">1:00</span>
+            <div class="step__title">Crack Egg & Add Noodles (30 seconds)</div>
+            <div class="step__content">
+              Push protein to the side. Crack egg into the wok. Scramble lightly. Add noodles and vegetables. Toss constantly. Everything should be moving.
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="step__number">1:30</span>
+            <div class="step__title">Pour Sauce (30 seconds)</div>
+            <div class="step__content">
+              Pour the entire sauce over the noodles. Toss rapidly. Every piece of noodle should be coated. The sauce should coat but not pool.
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="step__number">2:00</span>
+            <div class="step__title">Add Aromatics & Plate (60 seconds)</div>
+            <div class="step__content">
+              Add scallions and bean sprouts. Toss once. Transfer to plate immediately. Top with crushed peanuts and lime wedge. Serve immediately.
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <h4>⏱️ Timing is Everything</h4>
+          <p><strong>Too long in the wok?</strong> Your noodles become mushy. Speed is the point.</p>
+          <p style="margin-top: var(--space-md);"><strong>Cold wok?</strong> You're steaming, not stir-frying. The wok must be smoking.</p>
+          <p style="margin-top: var(--space-md);"><strong>Sauce not coating?</strong> You need more heat. The wok cooled down. This is the most common mistake.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER CTA -->
+    <section class="section section--primary newsletter">
+      <div class="container container--narrow">
+        <h2 class="section__title">Master Pad Thai</h2>
+        <form class="newsletter__form">
+          <input type="email" class="newsletter__input" placeholder="your@email.com" required>
+          <button type="submit" class="btn btn--accent btn--lg">Get Wok Recipes</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">👨‍🍳 Learn<span>ToChef</span></div>
+        </div>
+        <nav aria-label="Explore">
+          <h3 class="footer__column-title">Explore</h3>
+          <div class="footer__links">
+            <a href="/" class="footer__link">&#8594; Home</a>
+            <a href="/dishes/" class="footer__link">&#8594; Dishes</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Learn To Chef. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>
