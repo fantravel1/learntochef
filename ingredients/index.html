@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingredient Dictionary | Learn To Chef</title>
+  <meta name="description" content="Master ingredient selection, quality, storage, and sourcing. From oils to proteins, aromatics to seasonings. Learn how quality ingredients transform cooking.">
+  <meta name="keywords" content="ingredients, food sourcing, ingredient selection, cooking ingredients, food quality">
+  <link rel="canonical" href="https://learntochef.com/ingredients/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .ingredients-hero { background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%); color: white; padding: var(--space-xl) 0; text-align: center; }
+    .ingredients-hero h1 { font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: var(--space-md); }
+    .ingredients-hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+    .breadcrumb { padding: var(--space-md) 0; font-size: var(--text-sm); color: var(--color-text-light); }
+    .breadcrumb a { color: var(--color-accent); text-decoration: none; }
+    .section-divider { margin: var(--space-xl) 0; border: none; border-top: 1px solid var(--color-border); }
+    .ingredient-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg); margin-bottom: var(--space-xl); }
+    .ingredient-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .ingredient-card:hover { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    .ingredient-card__emoji { width: 100%; height: 140px; background: var(--color-bg-light); display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+    .ingredient-card__content { padding: var(--space-lg); }
+    .ingredient-card__category { font-size: 0.85rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-sm); }
+    .ingredient-card__title { font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: var(--space-sm); }
+    .ingredient-card__description { font-size: 0.95rem; color: var(--color-text-light); line-height: 1.6; margin-bottom: var(--space-md); }
+    .ingredient-card__link { display: inline-block; color: var(--color-accent); font-weight: 600; text-decoration: none; }
+    .ingredient-card__link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="/" class="header__logo" aria-label="Learn To Chef - Home">
+        <span class="header__logo-icon">👨‍🍳</span>
+        <span class="header__logo-text">Learn<span>ToChef</span></span>
+      </a>
+      <nav class="header__nav" role="navigation" aria-label="Main Navigation">
+        <a href="/#techniques" class="header__nav-link">Techniques</a>
+        <a href="/chefs/" class="header__nav-link">Master Chefs</a>
+        <a href="/dishes/" class="header__nav-link">Dishes</a>
+        <a href="/ingredients/" class="header__nav-link">Ingredients</a>
+      </nav>
+      <div class="header__actions">
+        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="ingredients-hero">
+      <div class="container">
+        <h1>Ingredient Dictionary</h1>
+        <p>Master ingredient selection, quality, and sourcing. Quality ingredients transform cooking from mundane to exceptional.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/">Home</a> / <span>Ingredient Dictionary</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- OILS SECTION -->
+    <section class="section">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: var(--space-md); font-family: var(--font-serif); font-size: 2rem;">🫒 Oils & Fats</h2>
+
+        <div class="ingredient-grid">
+          <a href="/ingredients/olive-oil/" style="text-decoration: none;">
+            <div class="ingredient-card">
+              <div class="ingredient-card__emoji">🫒</div>
+              <div class="ingredient-card__content">
+                <div class="ingredient-card__category">Oil</div>
+                <h3 class="ingredient-card__title">Olive Oil</h3>
+                <p class="ingredient-card__description">From EVOO to light oil. Master the grades, smoke points, and when to use each.</p>
+                <a class="ingredient-card__link">Learn More →</a>
+              </div>
+            </div>
+          </a>
+
+          <div style="background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="width: 100%; height: 140px; background: var(--color-bg-light); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🥜</div>
+            <div style="padding: var(--space-lg);">
+              <div style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-sm);">Oil</div>
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: var(--space-sm);">Peanut Oil</h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.6; margin-bottom: var(--space-md);">High smoke point and mild flavor. Essential for Asian wok cooking.</p>
+              <p style="color: var(--color-accent); font-weight: 600; font-size: 0.9rem;">Coming Soon</p>
+            </div>
+          </div>
+
+          <div style="background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="width: 100%; height: 140px; background: var(--color-bg-light); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🧈</div>
+            <div style="padding: var(--space-lg);">
+              <div style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-sm);">Fat</div>
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: var(--space-sm);">Butter</h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.6; margin-bottom: var(--space-md);">European vs cultured. Clarified butter and beurre blanc fundamentals.</p>
+              <p style="color: var(--color-accent); font-weight: 600; font-size: 0.9rem;">Coming Soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- PROTEINS SECTION -->
+    <section class="section section--cream">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: var(--space-md); font-family: var(--font-serif); font-size: 2rem;">🥩 Proteins</h2>
+
+        <div class="ingredient-grid">
+          <a href="/ingredients/fresh-fish/" style="text-decoration: none;">
+            <div class="ingredient-card">
+              <div class="ingredient-card__emoji">🐟</div>
+              <div class="ingredient-card__content">
+                <div class="ingredient-card__category">Protein</div>
+                <h3 class="ingredient-card__title">Fresh Fish</h3>
+                <p class="ingredient-card__description">Sushi-grade standards, freshness markers, and quality grading for raw consumption.</p>
+                <a class="ingredient-card__link">Learn More →</a>
+              </div>
+            </div>
+          </a>
+
+          <div style="background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="width: 100%; height: 140px; background: var(--color-bg-light); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🐔</div>
+            <div style="padding: var(--space-lg);">
+              <div style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-sm);">Protein</div>
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: var(--space-sm);">Chicken</h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.6; margin-bottom: var(--space-md);">From whole birds to parts. Heritage breeds vs industrial. Cooking methods.</p>
+              <p style="color: var(--color-accent); font-weight: 600; font-size: 0.9rem;">Coming Soon</p>
+            </div>
+          </div>
+
+          <div style="background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="width: 100%; height: 140px; background: var(--color-bg-light); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🥚</div>
+            <div style="padding: var(--space-lg);">
+              <div style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-sm);">Protein</div>
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: var(--space-sm);">Eggs</h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.6; margin-bottom: var(--space-md);">Freshness, grading, and doneness levels. Emulsification and binding.</p>
+              <p style="color: var(--color-accent); font-weight: 600; font-size: 0.9rem;">Coming Soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- AROMATICS SECTION -->
+    <section class="section">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: var(--space-md); font-family: var(--font-serif); font-size: 2rem;">🧄 Aromatics & Seasonings</h2>
+
+        <div class="ingredient-grid">
+          <a href="/ingredients/garlic/" style="text-decoration: none;">
+            <div class="ingredient-card">
+              <div class="ingredient-card__emoji">🧄</div>
+              <div class="ingredient-card__content">
+                <div class="ingredient-card__category">Aromatic</div>
+                <h3 class="ingredient-card__title">Garlic</h3>
+                <p class="ingredient-card__description">From raw to roasted. How temperature transforms flavor from sharp to sweet.</p>
+                <a class="ingredient-card__link">Learn More →</a>
+              </div>
+            </div>
+          </a>
+
+          <div style="background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="width: 100%; height: 140px; background: var(--color-bg-light); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🧅</div>
+            <div style="padding: var(--space-lg);">
+              <div style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-sm);">Aromatic</div>
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: var(--space-sm);">Onions</h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.6; margin-bottom: var(--space-md);">Yellow, red, white. Caramelization, sweetness, and the mirepoix base.</p>
+              <p style="color: var(--color-accent); font-weight: 600; font-size: 0.9rem;">Coming Soon</p>
+            </div>
+          </div>
+
+          <div style="background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="width: 100%; height: 140px; background: var(--color-bg-light); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🧂</div>
+            <div style="padding: var(--space-lg);">
+              <div style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-sm);">Seasoning</div>
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: var(--space-sm);">Sea Salt</h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.6; margin-bottom: var(--space-md);">Kosher, fleur de sel, finishing salts. When to season and how much.</p>
+              <p style="color: var(--color-accent); font-weight: 600; font-size: 0.9rem;">Coming Soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- FRESH HERBS SECTION -->
+    <section class="section section--cream">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: var(--space-md); font-family: var(--font-serif); font-size: 2rem;">🌿 Fresh Herbs</h2>
+
+        <div class="ingredient-grid">
+          <div style="background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="width: 100%; height: 140px; background: var(--color-bg-light); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🌿</div>
+            <div style="padding: var(--space-lg);">
+              <div style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-sm);">Herb</div>
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: var(--space-sm);">Cilantro</h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.6; margin-bottom: var(--space-md);">Essential in Thai, Indian, and Mexican cuisine. Love it or hate it.</p>
+              <p style="color: var(--color-accent); font-weight: 600; font-size: 0.9rem;">Coming Soon</p>
+            </div>
+          </div>
+
+          <div style="background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="width: 100%; height: 140px; background: var(--color-bg-light); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🌿</div>
+            <div style="padding: var(--space-lg);">
+              <div style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-sm);">Herb</div>
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: var(--space-sm);">Basil</h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.6; margin-bottom: var(--space-md);">Thai, Italian, and holy basil. Never cook too long. Add at the end.</p>
+              <p style="color: var(--color-accent); font-weight: 600; font-size: 0.9rem;">Coming Soon</p>
+            </div>
+          </div>
+
+          <div style="background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="width: 100%; height: 140px; background: var(--color-bg-light); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🌿</div>
+            <div style="padding: var(--space-lg);">
+              <div style="font-size: 0.85rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--space-sm);">Herb</div>
+              <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: var(--space-sm);">Parsley</h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-light); line-height: 1.6; margin-bottom: var(--space-md);">Flat-leaf vs curly. Universal herb. Gentle cooking, bright finishing.</p>
+              <p style="color: var(--color-accent); font-weight: 600; font-size: 0.9rem;">Coming Soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- THE PHILOSOPHY -->
+    <section class="section">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: var(--space-lg); font-family: var(--font-serif); font-size: 2rem;">Why Ingredients Matter</h2>
+
+        <div style="max-width: 900px; margin: 0 auto;">
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: var(--space-lg);">
+            Great cooking is 80% ingredient quality and 20% technique. You can follow every step perfectly, but if your tomatoes are mealy, your olive oil is rancid, or your fish is three days old, the dish suffers.
+          </p>
+
+          <div style="background: var(--color-bg-light); padding: var(--space-lg); border-radius: 8px; border-left: 4px solid var(--color-accent);">
+            <h3 style="color: var(--color-accent); margin-bottom: var(--space-md);">The Four Rules of Ingredient Selection</h3>
+            <ol style="color: var(--color-text-light); line-height: 1.8; margin-left: var(--space-lg);">
+              <li><strong>Know your source.</strong> Where does this come from? Is it in season? Was it treated well?</li>
+              <li><strong>Understand the grades.</strong> Not all olive oil is the same. Not all fish is sushi-grade. Learn the differences.</li>
+              <li><strong>Invest in the foundation.</strong> Splurge on quality salt, oil, and aromatics. You use them every day.</li>
+              <li><strong>Build relationships.</strong> Find a good fishmonger, butcher, and farmer. They become your partners in great cooking.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER CTA -->
+    <section class="section section--primary newsletter">
+      <div class="container container--narrow">
+        <h2 class="section__title">Master Your Ingredients</h2>
+        <form class="newsletter__form">
+          <input type="email" class="newsletter__input" placeholder="your@email.com" required>
+          <button type="submit" class="btn btn--accent btn--lg">Get Weekly Ingredient Guides</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">👨‍🍳 Learn<span>ToChef</span></div>
+          <p class="footer__brand-text">Master the fundamentals of great cooking.</p>
+        </div>
+        <nav aria-label="Explore">
+          <h3 class="footer__column-title">Explore</h3>
+          <div class="footer__links">
+            <a href="/" class="footer__link">&#8594; Home</a>
+            <a href="/dishes/" class="footer__link">&#8594; Dishes</a>
+            <a href="/techniques/" class="footer__link">&#8594; Techniques</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Learn To Chef. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>
