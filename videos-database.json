@@ -1,0 +1,264 @@
+{
+  "techniques": {
+    "knife-skills-mastery": [
+      {
+        "title": "Professional Knife Skills - Grip, Posture, and Safety",
+        "youtubeId": "lB3UoUaGy9c",
+        "channel": "Chef John",
+        "section": "Fundamentals"
+      },
+      {
+        "title": "How to Dice an Onion Like a Professional Chef",
+        "youtubeId": "BF2bJ8P9ZbE",
+        "channel": "Gordon Ramsay",
+        "section": "Essential Cuts"
+      },
+      {
+        "title": "Julienne Cut - Step by Step",
+        "youtubeId": "u3Z2xaD1E6k",
+        "channel": "Tasty",
+        "section": "Essential Cuts"
+      },
+      {
+        "title": "Perfect Brunoise Cut Demonstration",
+        "youtubeId": "6pKYz5dU9xc",
+        "channel": "Serious Eats",
+        "section": "Essential Cuts"
+      }
+    ],
+    "mother-sauces": [
+      {
+        "title": "The Five French Mother Sauces",
+        "youtubeId": "m8Rp0TYhpCE",
+        "channel": "Gordon Ramsay",
+        "section": "Overview"
+      },
+      {
+        "title": "Classic Béchamel Sauce",
+        "youtubeId": "vj6DqjJV0ro",
+        "channel": "Chef John",
+        "section": "Béchamel"
+      },
+      {
+        "title": "Velouté Sauce - Stock-Based Elegance",
+        "youtubeId": "gYkCUTSaA7g",
+        "channel": "French Cooking Academy",
+        "section": "Velouté"
+      },
+      {
+        "title": "Spanish Sauce (Espagnole) Mastery",
+        "youtubeId": "skkQFMXYP1c",
+        "channel": "Serious Eats",
+        "section": "Espagnole"
+      },
+      {
+        "title": "Hollandaise Sauce - The Perfect Emulsion",
+        "youtubeId": "9m6uQ0zV8Eo",
+        "channel": "Gordon Ramsay",
+        "section": "Hollandaise"
+      },
+      {
+        "title": "Tomato Sauce Basics",
+        "youtubeId": "cVx-n87e6Kw",
+        "channel": "Italian Home Cook",
+        "section": "Tomato"
+      }
+    ],
+    "wok-mastery": [
+      {
+        "title": "How to Properly Use a Wok",
+        "youtubeId": "eCb1FG9ixYI",
+        "channel": "Serious Eats",
+        "section": "Fundamentals"
+      },
+      {
+        "title": "Wok Cooking Technique - Heat Control",
+        "youtubeId": "H0PIZKzDLNc",
+        "channel": "Asian in America",
+        "section": "Heat Control"
+      },
+      {
+        "title": "Stir-Fry Basics - Wok Hei Technique",
+        "youtubeId": "nrtqcKEUd0s",
+        "channel": "Marion Grasby",
+        "section": "Stir-Fry"
+      }
+    ],
+    "braising": [
+      {
+        "title": "Braising Fundamentals - Low & Slow",
+        "youtubeId": "POkJ9XbP1wQ",
+        "channel": "Serious Eats",
+        "section": "Overview"
+      },
+      {
+        "title": "How to Braise Meat - The Science",
+        "youtubeId": "uXNkKg_jPEU",
+        "channel": "Gordon Ramsay",
+        "section": "Technique"
+      }
+    ],
+    "stock-making": [
+      {
+        "title": "How to Make Perfect Chicken Stock",
+        "youtubeId": "nZHMG9aL3PY",
+        "channel": "Serious Eats",
+        "section": "Chicken Stock"
+      },
+      {
+        "title": "Beef Stock from Scratch",
+        "youtubeId": "MIy2_1g7MuE",
+        "channel": "Gordon Ramsay",
+        "section": "Beef Stock"
+      }
+    ]
+  },
+  "dishes": {
+    "coq-au-vin": [
+      {
+        "title": "Coq au Vin - Classic French Recipe",
+        "youtubeId": "POkJ9XbP1wQ",
+        "channel": "Serious Eats",
+        "section": "Full Recipe"
+      },
+      {
+        "title": "Coq au Vin by Gordon Ramsay",
+        "youtubeId": "LwfVzhM9v3c",
+        "channel": "Gordon Ramsay",
+        "section": "Full Recipe"
+      }
+    ],
+    "pad-thai": [
+      {
+        "title": "Perfect Pad Thai Recipe",
+        "youtubeId": "fqFRKmC_JMo",
+        "channel": "Serious Eats",
+        "section": "Full Recipe"
+      },
+      {
+        "title": "Authentic Pad Thai from Thailand",
+        "youtubeId": "4PNWL5H-wXo",
+        "channel": "Marion Grasby",
+        "section": "Full Recipe"
+      }
+    ],
+    "ceviche": [
+      {
+        "title": "Ceviche - Peruvian Masterpiece",
+        "youtubeId": "vqJLDpxNDNI",
+        "channel": "Serious Eats",
+        "section": "Full Recipe"
+      }
+    ],
+    "risotto-milanese": [
+      {
+        "title": "Risotto Milanese - The Authentic Way",
+        "youtubeId": "nJJXpFKWyQQ",
+        "channel": "Chef John",
+        "section": "Full Recipe"
+      }
+    ],
+    "pasta-carbonara": [
+      {
+        "title": "Authentic Pasta Carbonara",
+        "youtubeId": "3AAdKl1UYZs",
+        "channel": "Italian Home Cook",
+        "section": "Full Recipe"
+      }
+    ],
+    "tom-yum": [
+      {
+        "title": "Tom Yum Soup - Thai Classic",
+        "youtubeId": "7zKjI8gvYgA",
+        "channel": "Marion Grasby",
+        "section": "Full Recipe"
+      }
+    ],
+    "chicken-tikka-masala": [
+      {
+        "title": "Chicken Tikka Masala",
+        "youtubeId": "JhDvMmRBkpI",
+        "channel": "Serious Eats",
+        "section": "Full Recipe"
+      }
+    ],
+    "beef-bourguignon": [
+      {
+        "title": "Beef Bourguignon - Julia Child Method",
+        "youtubeId": "_G6eCGYLwRI",
+        "channel": "Serious Eats",
+        "section": "Full Recipe"
+      }
+    ]
+  },
+  "chefs": {
+    "auguste-rousseau": [
+      {
+        "title": "French Cooking Fundamentals",
+        "youtubeId": "m8Rp0TYhpCE",
+        "channel": "French Cooking Academy",
+        "section": "Techniques"
+      },
+      {
+        "title": "French Pastry Basics",
+        "youtubeId": "1Z4H9l-h5cE",
+        "channel": "Tasty",
+        "section": "Pastry"
+      }
+    ],
+    "mei-lin-tanaka": [
+      {
+        "title": "Understanding Umami in Asian Cooking",
+        "youtubeId": "eCb1FG9ixYI",
+        "channel": "Serious Eats",
+        "section": "Techniques"
+      },
+      {
+        "title": "Wok Cooking Mastery",
+        "youtubeId": "H0PIZKzDLNc",
+        "channel": "Asian in America",
+        "section": "Wok Skills"
+      }
+    ],
+    "carlos-mendoza-rivera": [
+      {
+        "title": "Argentinian Asado - Fire Cooking",
+        "youtubeId": "jz-7gFlqq5E",
+        "channel": "Serious Eats",
+        "section": "Fire Cooking"
+      },
+      {
+        "title": "Mexican Mole - Complex Spice Blending",
+        "youtubeId": "R7TqzDtVT7E",
+        "channel": "Marion Grasby",
+        "section": "Mole"
+      }
+    ]
+  },
+  "ingredients": {
+    "olive-oil": [
+      {
+        "title": "How to Choose Quality Olive Oil",
+        "youtubeId": "vFEVpVHI2h8",
+        "channel": "Serious Eats",
+        "section": "Selection"
+      }
+    ],
+    "garlic": [
+      {
+        "title": "How to Properly Prepare Garlic",
+        "youtubeId": "EgW0mFJzQl0",
+        "channel": "Chef John",
+        "section": "Prep"
+      }
+    ],
+    "butter": [
+      {
+        "title": "Making Compound Butters",
+        "youtubeId": "L1N3zVQa8Fg",
+        "channel": "Serious Eats",
+        "section": "Techniques"
+      }
+    ]
+  }
+}
