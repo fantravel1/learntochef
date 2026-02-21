@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peking Duck | Chinese Roasted Duck — Learn To Chef</title>
   <meta name="description" content="Master Peking Duck. Crispy skin, tender meat, and the technique of roasting whole birds. A lesson in heat control and time.">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/style.css">
   <style>
     body { font-family: var(--font-sans); color: var(--color-text); }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 var(--space-lg); }
@@ -26,10 +26,11 @@
         <span class="header__logo-icon">👨‍🍳</span>
         <span class="header__logo-text">Learn<span>ToChef</span></span>
       </a>
-      <nav class="header__nav">
-        <a href="/#techniques" class="header__nav-link">Techniques</a>
-        <a href="/chefs/" class="header__nav-link">Master Chefs</a>
+      <nav class="header__nav" role="navigation" aria-label="Main Navigation">
         <a href="/dishes/" class="header__nav-link">Dishes</a>
+        <a href="/chefs/" class="header__nav-link">Chefs</a>
+        <a href="/techniques/" class="header__nav-link">Techniques</a>
+        <a href="/ingredients/" class="header__nav-link">Ingredients</a>
       </nav>
     </div>
   </header>
@@ -81,11 +82,27 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="container">
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">👨‍🍳 Learn<span>ToChef</span></div>
+        </div>
+        <nav>
+          <div class="footer__links">
+            <a href="/" class="footer__link">Home</a>
+            <a href="/dishes/" class="footer__link">Dishes</a>
+            <a href="/chefs/" class="footer__link">Chefs</a>
+            <a href="/techniques/" class="footer__link">Techniques</a>
+            <a href="/ingredients/" class="footer__link">Ingredients</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
         <p class="footer__copyright">&copy; 2026 Learn To Chef. All rights reserved.</p>
       </div>
-    </footer>
-  </main>
-</body>
+    </div>
+  </footer>
+<script src="../js/main.js"></script></body>
 </html>
